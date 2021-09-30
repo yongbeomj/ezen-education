@@ -32,6 +32,7 @@ public class Day03_5 {
 //		***
 //		****
 //		***** 
+		
 		System.out.print("문제3) 라인 수 : "); int s3 = scanner.nextInt();
 		for (int i = 1; i <= s3; i++) {
 			for (int j = 1; j <= i; j++) {
@@ -155,33 +156,105 @@ public class Day03_5 {
 		}
 		System.out.println("\n---------------------------------");
 		
+//		별문제10 : 입력받은 줄만큼 출력
+//          *
+//         ***
+//        *****
+//	   	 *******
+//		*********
+//		 *******
+//	 	  *****
+//	  	   ***
+//	   	    *
+		System.out.print("문제10) 라인 수 : "); int s10 = scanner.nextInt();
+		for (int i = 1; i <= s10; i++) {
+			// 공백
+			for (int j = 1; j <= s10 - i; j++) {
+				System.out.print(" ");
+			}
+			// 별찍기
+			for (int k = 1; k <= i*2-1; k++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		for (int i = 1; i < s10; i++) {
+			// 공백
+			for (int j = 0; j <= i-1; j++) {
+				System.out.print(" ");
+			}
+			// 별찍기
+			for (int k = 1; k <= (s10*2-(i*2+1)); k++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		System.out.println("\n---------------------------------");
+
 //		별문제11 : 입력받은 줄만큼 출력 [ 입력받은 행/열 동일 ] 
 //				
-//				*     *		i = 1		j = 1 2		k = 5	7-i*2				
-//				 *   *		i = 2		j = 1 2		k = 3
-//				  * *		i = 3		j = 1 2		k = 1
-//				   *		i = 4		j = 1		k = 0
-//			      * *		i = 5		j = 1 2		k = 1
-//			     *   *		i = 6		j = 1 2		k = 3
-//			    *     *		i = 7		j = 1 2		k = 5
-//							line		별			공백
+//		*     *						
+//		 *   *		
+//		  * *		
+//		   *		
+//	      * *		
+//	     *   *		
+//	    *     *		
 		System.out.print("문제11) 라인 수 : "); int s11 = scanner.nextInt();
-		for (int i = 1; i <= s11; i++) {
-			// 공백
-			for (int j = 1; j <= i-1; j++) {
-				System.out.print(" ");
+		for (int i = 0; i < s11; i++) {
+			for (int j = 0; j < s11; j++) {
+				if (i == j || i + j == s11-1) {
+					System.out.print("*");
+				} else {
+					System.out.print(" ");
+				}
 			}
-			// 별찍기
-			System.out.println("*");
-			// 사이 공백
-			for (int j = (s11-i*2); j >= 0; j--) {
-				System.out.print(" ");
-			}
-			// 별찍기
-
+			System.out.println();
 		}
 		System.out.println("\n---------------------------------");
 		
+//		별문제12 : 입력받은 줄만큼 출력
+//		*        *
+//		**      **
+//		***    ***
+//		****  ****
+//		**********
+//		****  ****
+//		***    ***
+//		**      **
+//		*        *
+		System.out.print("문제12) 라인 수 : "); int s12 = scanner.nextInt();
+		
+		for (int i = 1; i <= s12/2; i++) {
+			// 앞 별찍기
+			for (int j = 0; j < i; j++) { System.out.print("*"); }
+			// 공백
+			for (int k = 0; k < s12-2*i; k++) { System.out.print(" "); }
+			// 뒤 별찍기
+			for (int j = 0; j < i; j++) { System.out.print("*"); }
+			System.out.println();
+		}
+			// 중간라인 별찍기
+		for (int l = 0; l < s12; l++) {	
+			System.out.print("*");
+		}
+		System.out.println();
+		
+		for (int i = 1; i <= s12/2; i++) {
+			for (int j = 0; j < s12/2-i+1; j++) { System.out.print("*"); }
+			for (int k = 0; k < i*2-1; k++) { System.out.print(" "); }
+			for (int j = 0; j < s12/2-i+1; j++) { System.out.print("*"); }
+			System.out.println();
+		}
+
+//		별문제13 : 입력받은 줄만큼 출력
+//	        *                        
+//	       * *                       
+//	      *****                      
+//	     *     *                     
+//	    * *   * *                    
+//	   ***** *****                   
+		  
 		
 	}
 }
