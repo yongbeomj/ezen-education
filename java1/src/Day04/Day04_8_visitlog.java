@@ -77,6 +77,7 @@ public class Day04_8_visitlog {
 										break;
 									}
 								}
+								
 							} else if (menu2 == 2) { // 2번(로그아웃) 입력한 경우
 								System.out.println("로그아웃 되었습니다");
 								break; // 반복문 탈출
