@@ -7,7 +7,11 @@
 ### 2. 교육내용  
 |날짜|일차|주요내용|Link|
 |----|----|---------|----|
-|2021.09.28|1일차|개발환경 구축(JDK, Eclipse 설치) / 입력 · 출력|[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java1/src/Day01)|
+|2021.09.28|1일차|입력 / 출력|[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java1/src/Day01)|
 |2021.09.29|2일차|변수 / 자료형 / 연산자|[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java1/src/Day02)|
 |2021.09.30|3일차|제어문 / 반복문|[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java1/src/Day03)|
-|2021.10.01|4일차|배열|[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java1/src/Day04)|
+|2021.10.01|4일차|제어문 / 반복문 / 배열(1)|[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java1/src/Day04)|
+|2021.10.05|5일차|배열(2)|[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java1/src/Day05)|
+|2021.10.06|6일차|클래스(1)|[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java1/src/Day06)|
+|2021.10.07|7일차|클래스(2)|[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java1/src/Day07)|
+|2021.10.08|8일차|상속 / Mini Console Project|[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java1/src/Day08)|
