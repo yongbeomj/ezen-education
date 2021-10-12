@@ -23,9 +23,18 @@ public interface RemoteControl {
 			System.out.println("무음 해제합니다");
 		}
 	}
+	// 왜 사용?? 정적 메소드를 사용하는거랑 뭔 차이?? (객체 사용여부 말고) 
+	
 	
 	// 4. 정적 메소드 : 객체 선언없이 사용되는 메소드
 	static void changeBattery() {
 		System.out.println("건전지를 교환합니다");
+	}
+	static void setMute2(boolean mute) {
+		if (mute) {
+			System.out.println("무음 처리합니다");
+		} else {
+			System.out.println("무음 해제합니다");
+		}
 	}
 }
