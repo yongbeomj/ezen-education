@@ -16,7 +16,7 @@
 |2021.10.07|7일차|클래스(2)|[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java11/src/Day07)|
 |2021.10.08|8일차|상속(1) / Mini Console Project|[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java11/src/Day08)|  
 |2021.10.12|9일차|상속(2) / 인터페이스|[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java11/src/Day09)|  
-|2021.10.13|10일차|중첩클래스 / 중첩인터페이스|[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java11/src/Day10)|  
+|2021.10.13|10일차|추상클래스 / 중첩클래스 / 중첩인터페이스|[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java11/src/Day10)|  
 
 <!-- |2021.10.14|11일차||[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java11/src/Day11)|  
 |2021.10.15|12일차||[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java11/src/Day12)|
