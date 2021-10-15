@@ -2,8 +2,8 @@ package Day11;
 
 import java.io.IOException;
 
-public class BookProgram {
-
+public class Day11_5 {
+	
 	// 1. 메뉴 => while 무한루프
 	// 2. 입력받기 : 1. Scanner 객체  2. System.in.read()
 	// 3. 세부메뉴 구현 
@@ -73,10 +73,13 @@ public class BookProgram {
 			if( ch2==2 ) { System.out.println("---------수정창---------");}
 			
 		}
-		
-		
 	}
-	
-	
-	
 }
+
+
+
+
+
+
+
+
