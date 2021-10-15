@@ -35,10 +35,10 @@ public class Member {
 		Scanner scanner = Day12_7_Memberfile.scanner;
 		// 1. 입력
 		System.out.println(" *** 회원가입 페이지 *** ");
-		System.out.println(" 아이디 : ");		String id = scanner.next();
-		System.out.println(" 비밀번호 : ");	String password = scanner.next();
-		System.out.println(" 이름 : ");		String name = scanner.next();
-		System.out.println(" 연락처 : ");		String phone = scanner.next();
+		System.out.print(" 아이디 : ");		String id = scanner.next();
+		System.out.print(" 비밀번호 : ");	String password = scanner.next();
+		System.out.print(" 이름 : ");		String name = scanner.next();
+		System.out.print(" 연락처 : ");		String phone = scanner.next();
 		// 2. 객체 생성 
 		Member member = new Member(id, password, name, phone);
 		// 3. 파일 저장 
@@ -46,9 +46,9 @@ public class Member {
 		//1. 파일출력 객체 
 		try {
 			FileOutputStream fileOutputStream = 
-					new FileOutputStream("C:/Users/505-t/git/web_ezen_1/java1/src/Day12/memberlist.txt" );
+					new FileOutputStream("C:/Users/ez201208/git/ezen-education/java11/src/Day12/memberlist.txt" );
 			// 2. 객체 내보내기 [ 필드 구분  ( \n: 회원구분  , : 필드구분 ]
-				String outstring = member.id+","+member.password+","+member.name+","+member.phone+"\n";
+				String outstring = member.id+" , "+member.password+" , "+member.name+" , "+member.phone+"\n";
 				fileOutputStream.write( outstring.getBytes() ); // 바이트열 변환후 쓰기 
 		}
 		catch (Exception e) {
