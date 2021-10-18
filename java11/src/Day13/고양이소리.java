@@ -1,4 +1,4 @@
-package Day13_Practice;
+package Day13;
 
 public class 고양이소리 extends Thread {
 

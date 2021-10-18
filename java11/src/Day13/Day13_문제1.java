@@ -1,4 +1,4 @@
-package Day13_Practice;
+package Day13;
 
 public class Day13_¹®Á¦1  {
 	
