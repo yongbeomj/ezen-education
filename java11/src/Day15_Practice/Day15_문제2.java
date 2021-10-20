@@ -1,4 +1,4 @@
-package Day15;
+package Day15_Practice;
 
 import java.util.HashSet;
 import java.util.Scanner;
