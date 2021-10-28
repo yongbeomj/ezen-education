@@ -23,11 +23,11 @@
 |2021.10.18 [ Day13 ]|JAVA|멀티스레드|[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java11/src/Day13)|
 |2021.10.19 [ Day14 ]|JAVA|제네릭|[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java11/src/Day14)|
 |2021.10.20 [ Day15 ]|JAVA|컬렉션 프레임워크|[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java11/src/Day15)|
-|2021.10.21 [ Day16 ]|JAVA|Member Board Programming(1)|[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java11/src/Day16)|
-|2021.10.22 [ Day17 ]|JAVA|Member Board Programming(2)|[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java11/src/Day17)|
-|2021.10.25 [ Day18 ]|JAVA|JAVA 정리(1) / Team Console Project|[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java11/src/Day18)|
-|2021.10.26 [ Day19 ]|JAVA|JAVA 정리(2) / Team Console Project|[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java11/src/Day19)|
-|2021.10.27 [ Day20 ]|JAVA|JAVA 정리(3) / Team Console Project(발표)|[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java11/src/Day20)|
+|2021.10.21 [ Day16 ]|JAVA|Member Board Programming(1)||
+|2021.10.22 [ Day17 ]|JAVA|Member Board Programming(2)||
+|2021.10.25 [ Day18 ]|JAVA|JAVA 정리(1) / Team Console Project||
+|2021.10.26 [ Day19 ]|JAVA|JAVA 정리(2) / Team Console Project||
+|2021.10.27 [ Day20 ]|JAVA|JAVA 정리(3) / Team Console Project(발표)||
 
 #### 2. 2개월차 [ JAVAFX · Scene Builder · Datavbase · Front (HTML · CSS · JS ) ]
 <!-- |2021.10.28|21일차||[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java11/src/Day21)|
