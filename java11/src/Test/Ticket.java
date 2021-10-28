@@ -4,8 +4,8 @@ package Test;
 
 public class Ticket {
    // 1. 필드 [ 목적지, 자리, 가격, 시간 ]
-      private String t_목적지;
-      private String t_자리;
+      private String 호텔지점;
+      private String 방타입;
       private String t_가격;
       private String t_시간;
       private boolean t_rental;
@@ -13,9 +13,9 @@ public class Ticket {
       // 2. 생성자
          // 1. 목적지 자리 가격 출발시간 도착시간 [ 모든 필드 ]
 
-      public Ticket(String t_목적지, String t_자리, String t_가격, String t_시간, boolean t_rental, String t_id) {
-         this.t_목적지 = t_목적지;
-         this.t_자리 = t_자리;
+      public Ticket(String 호텔지점, String 방타입, String t_가격, String t_시간, boolean t_rental, String t_id) {
+         this.호텔지점 = 호텔지점;
+         this.방타입 = 방타입;
          this.t_가격 = t_가격;
          this.t_시간 = t_시간;
          this.t_rental = t_rental;
@@ -31,20 +31,20 @@ public class Ticket {
       public boolean ticket_add() {
          // 1. 입력받기 
          System.out.println("------------------목적지 등록 페이지 ----------------");
-         System.out.println(" 목적지 입력 : ");   String t_목적지 = Main.scanner.next();
+         System.out.println(" 목적지 입력 : ");   String 호텔지점 = Main.scanner.next();
             // 중복체크 
-            boolean check = ticketcheck(t_목적지);
+            boolean check = ticketcheck(호텔지점);
             if( check ) {
                System.out.println(" [[ 알림 ]] : 이미 목적지가 존재합니다. ");
                return false;
             }
-         System.out.println(" 자리 입력 : ");   String t_자리 = Main.scanner.next();
+         System.out.println(" 자리 입력 : ");   String 방타입 = Main.scanner.next();
          System.out.println(" 가격 입력 : ");   String t_가격 = Main.scanner.next();
          System.out.println(" 시간 입력 : ");   String t_시간 = Main.scanner.next();
          
          
          // 2. 객체 생성      // 자리 초기값 => true       // 회원 초기값 => null
-         Ticket ticket = new Ticket(t_목적지, t_자리,t_가격, t_시간, true , null);
+         Ticket ticket = new Ticket(호텔지점, 방타입,t_가격, t_시간, true , null);
          // 3. 객체 배열저장 
          for( int i = 0 ; i< Main.tickets.length ; i++ ) {
             if( Main.tickets[i] == null ) { 
@@ -56,7 +56,7 @@ public class Ticket {
       public boolean ticketcheck( String check_isbn ) {
          for( int i = 0 ; i< Main.tickets.length ; i++ ) {
             if( Main.tickets[i] != null && 
-                  Main.tickets[i].getT_목적지().equals(check_isbn) ) {
+                  Main.tickets[i].get호텔지점().equals(check_isbn) ) {
                return true;
             }
          }
@@ -74,7 +74,7 @@ public class Ticket {
             Ticket ticket = Main.tickets[i];
 
             
-            System.out.println( ticket.getT_목적지()+"\t"+ticket.getT_자리()
+            System.out.println( ticket.get호텔지점()+"\t"+ticket.get방타입()
                +"\t"+ticket.getT_가격()+"\t"+ticket.getT_시간() + "\t" + ticket.getT_rental()+"\t" + ticket.t_id );
          }
          return;
@@ -82,26 +82,26 @@ public class Ticket {
          // 4. 예매 등록 메소드 
       public boolean ticket_rental( String loginid ) {
          System.out.println("------------------예매 페이지 ----------------");
-         System.out.println(" 목적지를 입력하세요 : ");   String t_목적지 = Main.scanner.next();
+         System.out.println(" 목적지를 입력하세요 : ");   String 호텔지점 = Main.scanner.next();
             // 목적지 존재여부 체크 
-         boolean check = ticketcheck(t_목적지);
+         boolean check = ticketcheck(호텔지점);
          if( check ) {
             
             for( int i = 0 ; i<Main.tickets.length ;i++ ) {
                if( Main.tickets[i] != null && 
-                     Main.tickets[i].getT_목적지().equals(t_목적지)) { // 동일한 목적지가 존재하면
+                     Main.tickets[i].get호텔지점().equals(호텔지점)) { // 동일한 목적지가 존재하면
                   // 예매여부 확인 
                   if( Main.tickets[i].getT_rental() ) {
-                     System.out.println(" [[ 알림 ]] : " + t_목적지 +" 예매 성공"  );
+                     System.out.println(" [[ 알림 ]] : " + 호텔지점 +" 예매 성공"  );
                      // 1. 예매여부 true => false
                      Main.tickets[i].setT_rental(false);
                      // 2. 예매성공시 예매회원에 현재 로그인된 아이디 대입 
                      Main.tickets[i].setT_id(loginid);
                      // 3. 예매 성공시 자리 인원 카운트 하기 
-                     Main.cnt = Main.tickets[i].getT_자리();
+                     Main.cnt = Main.tickets[i].get방타입();
                      int t_cnt = Integer.parseInt(Main.cnt);
                      t_cnt--;
-                     Main.tickets[i].setT_자리(Integer.toString(t_cnt));
+                     Main.tickets[i].set방타입(Integer.toString(t_cnt));
                      
                      
                      return true;
@@ -119,24 +119,24 @@ public class Ticket {
       public boolean ticket_return( String loginid ) {
       
          System.out.println("------------------여행 취소 페이지 ----------------");
-         System.out.println(" 취소할 여행지 : ");   String t_목적지 = Main.scanner.next();
+         System.out.println(" 취소할 여행지 : ");   String 호텔지점 = Main.scanner.next();
          
          // 1.예약중인 목적지들 찾기 
          for( int i = 0 ; i< Main.tickets.length ; i++) {
             if( Main.tickets[i] !=null && !Main.tickets[i].getT_rental() ) {
                // ! : 부정 ( true => false )
                // 2.입력받은 목적지 
-               if( Main.tickets[i].getT_목적지().equals(t_목적지) ) {
+               if( Main.tickets[i].get호텔지점().equals(호텔지점) ) {
                   // 3.일반 회원 == 로그인된 예매 회원
                   if( Main.tickets[i].getT_id().equals( loginid ) ) {
                      System.out.println(" [[ 알림 ]] : 여행 취소 성공 !!! ");
                      Main.tickets[i].setT_id(null); 
                      Main.tickets[i].setT_rental(true); 
                      
-                     Main.cnt = Main.tickets[i].getT_자리();
+                     Main.cnt = Main.tickets[i].get방타입();
                      int t_cnt = Integer.parseInt(Main.cnt);
                      t_cnt++;
-                     Main.tickets[i].setT_자리(Integer.toString(t_cnt));
+                     Main.tickets[i].set방타입(Integer.toString(t_cnt));
                      return true;
                   }
                }
@@ -149,18 +149,18 @@ public class Ticket {
       public boolean ticket_return2( String loginid ) {
          
          System.out.println("------------------여행 취소 페이지 ----------------");
-         System.out.println(" 취소할 여행지 : ");   String t_목적지 = Main.scanner.next();
+         System.out.println(" 취소할 여행지 : ");   String 호텔지점 = Main.scanner.next();
          
           
          for( int i = 0 ; i< Main.tickets.length ; i++) {
             if( Main.tickets[i] !=null && Main.tickets[i].getT_rental() ) {
                
-               if( Main.tickets[i].getT_목적지().equals(t_목적지) ) {
+               if( Main.tickets[i].get호텔지점().equals(호텔지점) ) {
                   
                   
                   System.out.println(" [[ 알림 ]] : 여행 취소 성공 !!! ");
-                  Main.tickets[i].setT_목적지(null); 
-                  Main.tickets[i].setT_자리(null); 
+                  Main.tickets[i].set호텔지점(null); 
+                  Main.tickets[i].set방타입(null); 
                   Main.tickets[i].setT_가격(null); 
                   Main.tickets[i].setT_시간(null); 
                   Main.tickets[i].setT_rental(false); 
@@ -174,17 +174,17 @@ public class Ticket {
          return true;
       }
       
-      public String getT_목적지() {
-         return t_목적지;
+      public String get호텔지점() {
+         return 호텔지점;
       }
-      public void setT_목적지(String t_목적지) {
-         this.t_목적지 = t_목적지;
+      public void set호텔지점(String 호텔지점) {
+         this.호텔지점 = 호텔지점;
       }
-      public String getT_자리() {
-         return t_자리;
+      public String get방타입() {
+         return 방타입;
       }
-      public void setT_자리(String t_자리) {
-         this.t_자리 = t_자리;
+      public void set방타입(String 방타입) {
+         this.방타입 = 방타입;
       }
       public String getT_가격() {
          return t_가격;

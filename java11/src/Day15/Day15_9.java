@@ -26,6 +26,7 @@ public class Day15_9 {
 						// next() : 객체 가져오기
 			System.out.println( person.name +" \t "+person.age );
 		}
+		
 		// 3. 
 		for( Person person : treeSet ) {
 			System.out.println( person.name +" \t "+person.age );
