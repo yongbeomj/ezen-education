@@ -30,8 +30,10 @@
 |2021.10.27 [ Day20 ]|JAVA|JAVA 정리(3) / Team Console Project(발표)||
 
 #### 2. 2개월차 [ JAVAFX · Scene Builder · Datavbase · Front (HTML · CSS · JS ) ]
-<!-- |2021.10.28|21일차||[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java11/src/Day21)|
-|2021.10.29|22일차||[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java11/src/Day22)|
+|날짜|목차|주요내용|Link|
+|----|----|---------|----|
+|2021.10.28 [ Day21 ]|JAVAFX <br> Scene Builder|||
+<!-- |2021.10.29|22일차||[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java11/src/Day22)|
 |2021.11.01|23일차||[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java11/src/Day18)|
 |2021.11.02|24일차||[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java11/src/Day19)|
 |2021.11.03|25일차||[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java11/src/Day20)|
