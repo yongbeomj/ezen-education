@@ -19,4 +19,8 @@ public class Day01_1_fxml extends Application{
 		stage.show();
 		
 	}
+	
+	public static void main(String[] args) {
+		
+	}
 }
