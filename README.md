@@ -5,8 +5,8 @@
 #### 2. 교육기간 : 2021-09-28 ~ 2022-02-23
 
 ### 2. 교육내용  
-#### 1. 1개월차 [JAVA]
-|날짜|일차|주요내용|Link|
+#### 1. 1개월차 [ JAVA ]
+|날짜|목차|주요내용|Link|
 |----|----|---------|----|
 |2021.09.28 [ Day01 ]|JAVA|입력 / 출력|[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java11/src/Day01)|
 |2021.09.29 [ Day02 ]|JAVA|변수 / 자료형 / 연산자|[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java11/src/Day02)|
@@ -29,7 +29,7 @@
 |2021.10.26 [ Day19 ]|JAVA|JAVA 정리(2) / Team Console Project|[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java11/src/Day19)|
 |2021.10.27 [ Day20 ]|JAVA|JAVA 정리(3) / Team Console Project(발표)|[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java11/src/Day20)|
 
-#### 2. 2개월차 [JAVA]
+#### 2. 2개월차 [ JAVAFX · Scene Builder · Datavbase · Front (HTML · CSS · JS ) ]
 <!-- |2021.10.28|21일차||[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java11/src/Day21)|
 |2021.10.29|22일차||[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java11/src/Day22)|
 |2021.11.01|23일차||[바로가기](https://github.com/yongbeomj/ezen-education/tree/main/java11/src/Day18)|
