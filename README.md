@@ -32,15 +32,15 @@
 #### 2. 2개월차 [ JAVAFX · Scene Builder · Datavbase · Front (HTML · CSS · JS ) ]
 |날짜|목차|주요내용|Link|
 |----|----|---------|----|
-|2021.10.28 [ Day21 ]|JAVA2|JAVAFX / Scene Builder (설치, 이클립스 연동)||
-|2021.10.29 [ Day22 ]|JAVA2 <br> Database </br>|JAVAFX / Scene Builder (회원가입, 로그인) <br> MySQL (설치) </br>||
-|2021.11.01 [ Day23 ]|JAVA2 <br> Database </br>|JAVAFX / Scene Builder <br> MySQL </br>||
-|2021.11.02 [ Day24 ]|JAVA2 <br> Database </br>|JAVAFX / Scene Builder <br> MySQL </br>||
-|2021.11.03 [ Day25 ]|JAVA2 <br> Database </br>|JAVAFX / Scene Builder <br> MySQL </br>||
-|2021.11.04 [ Day26 ]|JAVA2 <br> Database </br>|JAVAFX / Scene Builder <br> MySQL </br>||
-|2021.11.05 [ Day27 ]|JAVA2 <br> Database </br>|JAVAFX / Scene Builder <br> MySQL </br>||
-|2021.11.08 [ Day28 ]|JAVA2 <br> Database </br>|JAVAFX / Scene Builder <br> MySQL </br>||
-|2021.11.09 [ Day29 ]|JAVA2 <br> Database </br>|JAVAFX / Scene Builder <br> MySQL </br>||
-|2021.11.10 [ Day30 ]|JAVA2 <br> Database </br>|JAVAFX / Scene Builder <br> Database 활용 (평가) </br>||
+|2021.10.28 [ Day21 ]|JAVA2|JAVAFX / Scene Builder <br>- 설치, 이클립스 연동</br>||
+|2021.10.29 [ Day22 ]|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- 회원가입, 로그인, 아이디찾기, 비밀번호찾기</br>||
+|2021.11.01 [ Day23 ]|JAVA2 / Database|JAVAFX / Scene Builder / MySQL||
+|2021.11.02 [ Day24 ]|JAVA2 / Database|JAVAFX / Scene Builder / MySQL||
+|2021.11.03 [ Day25 ]|JAVA2 / Database|JAVAFX / Scene Builder / MySQL||
+|2021.11.04 [ Day26 ]|JAVA2 / Database|JAVAFX / Scene Builder / MySQL||
+|2021.11.05 [ Day27 ]|JAVA2 / Database|JAVAFX / Scene Builder / MySQL||
+|2021.11.08 [ Day28 ]|JAVA2 / Database|JAVAFX / Scene Builder / MySQL||
+|2021.11.09 [ Day29 ]|JAVA2 / Database|JAVAFX / Scene Builder / MySQL||
+|2021.11.10 [ Day30 ]|JAVA2 / Database|JAVAFX / Scene Builder / MySQL||
 |2021.11.11 [ Day31 ]|||
 |2021.11.12 [ Day32 ]|||
