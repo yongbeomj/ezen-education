@@ -3,8 +3,7 @@ module javafx {
 	requires javafx.fxml;
 	
 	opens application to javafx.graphics, javafx.fxml;
-	opens Day01 to javafx.graphics, javafx.fxml;
 	opens app to javafx.graphics, javafx.fxml;
-	
-	
+	opens controller to javafx.graphics, javafx.fxml;
+	opens Day01 to javafx.graphics, javafx.fxml;
 }
