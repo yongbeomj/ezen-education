@@ -19,7 +19,7 @@ public class Appstart extends Application {
 			stage.setTitle("Nike"); // 스테이지 이름 
 			// 스테이지 아이콘 
 				// 1. 이미지 불러오기
-				Image image = new Image("file:D:\\workspace-jyb\\javafx\\src\\fxml\\stageicon.png");
+				Image image = new Image("file:D:\\workspace-jyb\\javafx_1\\src\\fxml\\stageicon.png");
 				stage.getIcons().add(image);
 		stage.show();
 		
