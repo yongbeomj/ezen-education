@@ -26,6 +26,7 @@ public class MainpageController implements Initializable {
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		
 		lblloginid.setText( LoginController.getinstance().getid() );
+		loadpage("home"); // mainpage 실행 가운데 home.fxml 배치
 	}
 	
 	@FXML
@@ -56,23 +57,46 @@ public class MainpageController implements Initializable {
     private AnchorPane lp;
 
     @FXML
-    private BorderPane mianpageborderpane;
+    private BorderPane mainpageborderpane;
+    
+    // 객체화 
+    	// 선언 
+    public static MainpageController instance;
+    	// 생성자 
+    public MainpageController() {
+		instance = this; // [ 현재 클래스의 모든 멤버 포함 ] 
+	}
+    	// 객체 반환 
+    public static MainpageController getinstance() {
+    	return instance;
+    }
+    
+    // 가운데 pane 변경하는 메소드 
+    public void loadpage( String page ) {
+    	try {
+    		Parent parent = FXMLLoader.load( 
+    				getClass().getResource("/fxml/"+page+".fxml"));
+    		mainpageborderpane.setCenter(parent);
+    	}
+    	catch (Exception e) {}
+    }
+    
+    
 
     @FXML
     void chatting(ActionEvent event) {
-
+    	loadpage("chatting");
     }
 
     @FXML
     void community(ActionEvent event) {
-
+    	loadpage("community");
     }
 
     @FXML
     void home(ActionEvent event) {
-
+    	loadpage("home");
     }
-
     @FXML // 로그아웃 메소드 [ 현재 스테이지 닫고 -> login 스테이지 열기 ]  
     void logout(ActionEvent event) {
     	
@@ -99,7 +123,7 @@ public class MainpageController implements Initializable {
 	    			stage.setTitle("Nike"); // 스테이지 이름 
 	    			// 스테이지 아이콘 
 	    				// 1. 이미지 불러오기
-	    				Image image = new Image("file:C:\\Users\\ez201208\\git\\ezen-education\\javafx_1\\src\\fxml\\stageicon.png");
+	    				Image image = new Image("file:C:\\Users\\505-t\\git\\web_ezen_1\\java2\\src\\fxml\\stageicon.png");
 	    				stage.getIcons().add(image);
 	    		stage.show();
     		}
@@ -113,12 +137,12 @@ public class MainpageController implements Initializable {
 
     @FXML
     void myinfo(ActionEvent event) {
-
+    	loadpage("myinfo");
     }
 
     @FXML
     void product(ActionEvent event) {
-
+    	loadpage("product");
     }
 
 	
