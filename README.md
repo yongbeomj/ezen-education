@@ -34,7 +34,7 @@
 |----|----|----|
 |2021.10.28 [ Day21 ]|JAVA2|JAVAFX / Scene Builder <br>- 설치, 이클립스 연동</br>|
 |2021.10.29 [ Day22 ]|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- 회원가입, 로그인, 아이디찾기, 비밀번호찾기</br>|
-|2021.11.01 [ Day23 ]|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- </br>|
+|2021.11.01 [ Day23 ]|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- Main menu, My page, 로그아웃, 회원탈퇴</br>|
 |2021.11.02 [ Day24 ]|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- </br>|
 |2021.11.03 [ Day25 ]|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- </br>|
 |2021.11.04 [ Day26 ]|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- </br>|
