@@ -71,6 +71,10 @@ public class MainpageController implements Initializable {
     	return instance;
     }
     
+    public String getloginid() {
+    	return lblloginid.getText();
+    }
+    
     // 가운데 pane 변경하는 메소드 
     public void loadpage( String page ) {
     	try {
@@ -123,7 +127,7 @@ public class MainpageController implements Initializable {
 	    			stage.setTitle("Nike"); // 스테이지 이름 
 	    			// 스테이지 아이콘 
 	    				// 1. 이미지 불러오기
-	    				Image image = new Image("file:C:\\Users\\505-t\\git\\web_ezen_1\\java2\\src\\fxml\\stageicon.png");
+	    				Image image = new Image("file:C:\\Users\\ez201208\\git\\ezen-education\\javafx_1\\src\\fxml\\stageicon.png");
 	    				stage.getIcons().add(image);
 	    		stage.show();
     		}
