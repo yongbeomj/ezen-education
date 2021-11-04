@@ -18,6 +18,7 @@ import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 public class LoginController implements Initializable {
@@ -88,10 +89,10 @@ public class LoginController implements Initializable {
     	// 1. Dao객체 login메소드 호출 [ login 메소드의 아이디와 비밀번호 넣기 ] 
     	boolean result =  MemberDao.getMemberDao()
     					.login(txtid.getText(), txtpassword.getText());
- 
     	if( result ) {
     		lblconfirm.setText(" 로그인 성공 ");
-    		
+    		MemberDao.getMemberDao().pointupdate(txtid.getText(), 10); // 로그인 성공시 포인트 + 10
+    	
     		// 기존 스테이지 끄기 
     		btnlogin.getScene().getWindow().hide(); // 해당 버튼의 씬 윈도우 숨기기
     		
@@ -100,10 +101,14 @@ public class LoginController implements Initializable {
     		try {
     			Parent parent = FXMLLoader.load( getClass().getResource("/fxml/mainpage.fxml"));
     			Scene scene = new Scene( parent );
+    			// 폰트 로드 
+    				//Font.loadFont( getClass().getResourceAsStream("/app/강한육군 Bold.ttf"), 14);
+    			// 외부 스타일시트 적용 
+    				//scene.getStylesheets().add(getClass().getResource("/app/application.css").toExternalForm());
     			stage.setScene(scene);
 	    			stage.setResizable(false); // 스테이지 크기 고정 
 	    			stage.setTitle("Nike"); // 스테이지 이름 
-	    				Image image = new Image("file:C:\\Users\\ez201208\\git\\ezen-education\\javafx_1\\src\\fxml\\stageicon.png");
+	    				Image image = new Image("file:C:\\Users\\505-t\\git\\web_ezen_1\\java2\\src\\fxml\\stageicon.png");
 	    				stage.getIcons().add(image);
     			stage.show();
     		}

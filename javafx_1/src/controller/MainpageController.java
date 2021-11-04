@@ -94,7 +94,7 @@ public class MainpageController implements Initializable {
 
     @FXML
     void community(ActionEvent event) {
-    	loadpage("community");
+    	loadpage("boardlist");
     }
 
     @FXML
@@ -127,7 +127,7 @@ public class MainpageController implements Initializable {
 	    			stage.setTitle("Nike"); // 스테이지 이름 
 	    			// 스테이지 아이콘 
 	    				// 1. 이미지 불러오기
-	    				Image image = new Image("file:C:\\Users\\ez201208\\git\\ezen-education\\javafx_1\\src\\fxml\\stageicon.png");
+	    				Image image = new Image("file:C:\\Users\\505-t\\git\\web_ezen_1\\java2\\src\\fxml\\stageicon.png");
 	    				stage.getIcons().add(image);
 	    		stage.show();
     		}
@@ -146,8 +146,25 @@ public class MainpageController implements Initializable {
 
     @FXML
     void product(ActionEvent event) {
-    	loadpage("product");
+    	loadpage("productlist");
     }
 
-	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

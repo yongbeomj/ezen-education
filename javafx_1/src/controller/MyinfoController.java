@@ -85,7 +85,7 @@ public class MyinfoController implements Initializable {
     	    		stage.setScene(scene);
     	    			stage.setResizable(false); // 스테이지 크기 고정 
     	    			stage.setTitle("Nike"); // 스테이지 이름 
-    	    				Image image = new Image("file:C:\\Users\\ez201208\\git\\ezen-education\\javafx_1\\src\\fxml\\stageicon.png");
+    	    				Image image = new Image("file:C:\\Users\\505-t\\git\\web_ezen_1\\java2\\src\\fxml\\stageicon.png");
     	    				stage.getIcons().add(image);
     	    		stage.show();
         		}
@@ -101,7 +101,9 @@ public class MyinfoController implements Initializable {
 
     @FXML
     void update(ActionEvent event) {
-
+    	MainpageController.getinstance().
+    		loadpage("myinfoupdate");
+    	
     }
 
 }

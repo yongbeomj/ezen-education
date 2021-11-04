@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 public class Appstart extends Application {
@@ -14,6 +15,10 @@ public class Appstart extends Application {
 		
 		Parent parent = FXMLLoader.load( getClass().getResource("/fxml/login.fxml"));
 		Scene scene = new Scene( parent );
+		// 폰트 로드 
+			Font.loadFont( getClass().getResourceAsStream("HS새마을체.ttf"), 14);
+		// 외부 스타일시트 적용 
+			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		stage.setScene(scene);
 			stage.setResizable(false); // 스테이지 크기 고정 
 			stage.setTitle("Nike"); // 스테이지 이름 
@@ -22,6 +27,7 @@ public class Appstart extends Application {
 				Image image = new Image("file:C:\\Users\\ez201208\\git\\ezen-education\\javafx_1\\src\\fxml\\stageicon.png");
 				stage.getIcons().add(image);
 		stage.show();
+
 		
 	}
 	public static void main(String[] args) {
