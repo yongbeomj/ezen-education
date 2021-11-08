@@ -33,14 +33,14 @@
 |날짜|목차|주요내용|비고|
 |----|----|----|----|
 |2021.10.28 <br>[ Day21 ]</br>|JAVA2|JAVAFX / Scene Builder <br>- 설치, 이클립스 연동, 회원가입, 로그인</br>||
-|2021.10.29 [ Day22 ]|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- 회원가입, 로그인, 아이디찾기, 비밀번호찾기</br>||
-|2021.11.01 [ Day23 ]|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- Main page, My page, 로그아웃, 회원탈퇴</br>||
-|2021.11.02 [ Day24 ]|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- 회원정보 CRUD</br>|[평가] 응용SW 기초기술 활용|
-|2021.11.03 [ Day25 ]|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- 게시판 CRUD(1)</br>||
-|2021.11.04 [ Day26 ]|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- 게시판 CRUD(2)</br>||
-|2021.11.05 [ Day27 ]|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- 제품목록 CRUD</br>||
-|2021.11.08 [ Day28 ]|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- 제품통계</br>||
-|2021.11.09 [ Day29 ]|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- </br>||
-|2021.11.10 [ Day30 ]|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- </br>||
-|2021.11.11 [ Day31 ]|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- </br>|[평가] SQL 활용|
-|2021.11.12 [ Day32 ]|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- </br>||
+|2021.10.29 <br>[ Day22 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- 회원가입, 로그인, 아이디찾기, 비밀번호찾기</br>||
+|2021.11.01 <br>[ Day23 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- Main page, My page, 로그아웃, 회원탈퇴</br>||
+|2021.11.02 <br>[ Day24 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- 회원정보 CRUD</br>|[평가] 응용SW 기초기술 활용|
+|2021.11.03 <br>[ Day25 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- 게시판 CRUD(1)</br>||
+|2021.11.04 <br>[ Day26 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- 게시판 CRUD(2)</br>||
+|2021.11.05 <br>[ Day27 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- 제품목록 CRUD</br>||
+|2021.11.08 <br>[ Day28 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- 제품통계</br>||
+|2021.11.09 <br>[ Day29 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- </br>||
+|2021.11.10 <br>[ Day30 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- </br>||
+|2021.11.11 <br>[ Day31 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- </br>|[평가] SQL 활용|
+|2021.11.12 <br>[ Day32 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- </br>||
