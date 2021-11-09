@@ -1,4 +1,4 @@
-package Day02;
+package Day22;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
