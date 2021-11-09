@@ -39,8 +39,8 @@
 |2021.11.03 <br>[ Day25 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- 게시판 CRUD(1)</br>||
 |2021.11.04 <br>[ Day26 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- 게시판 CRUD(2)</br>||
 |2021.11.05 <br>[ Day27 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- 제품목록 CRUD</br>||
-|2021.11.08 <br>[ Day28 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- 제품통계</br>||
-|2021.11.09 <br>[ Day29 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- </br>||
+|2021.11.08 <br>[ Day28 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- 제품통계(Graph)</br>||
+|2021.11.09 <br>[ Day29 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- Chatting</br>||
 |2021.11.10 <br>[ Day30 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- </br>||
 |2021.11.11 <br>[ Day31 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- </br>|[평가] SQL 활용|
 |2021.11.12 <br>[ Day32 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- </br>||
