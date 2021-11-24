@@ -16,7 +16,7 @@ public class Appstart extends Application {
 		Parent parent = FXMLLoader.load( getClass().getResource("/fxml/login.fxml"));
 		Scene scene = new Scene( parent );
 		// 폰트 로드 
-			Font.loadFont( getClass().getResourceAsStream("HS새마을체.ttf"), 14);
+			Font.loadFont( getClass().getResourceAsStream("강한육군 Bold.ttf"), 14);
 		// 외부 스타일시트 적용 
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 		stage.setScene(scene);
@@ -24,10 +24,9 @@ public class Appstart extends Application {
 			stage.setTitle("Nike"); // 스테이지 이름 
 			// 스테이지 아이콘 
 				// 1. 이미지 불러오기
-				Image image = new Image("file:C:\\Users\\ez201208\\git\\ezen-education\\javafx_1\\src\\fxml\\stageicon.png");
+				Image image = new Image("file:C:\\Users\\505-t\\git\\web_ezen_1\\java2\\src\\fxml\\stageicon.png");
 				stage.getIcons().add(image);
 		stage.show();
-
 		
 	}
 	public static void main(String[] args) {
