@@ -25,11 +25,11 @@
 |2021.10.20 [ Day15 ]|JAVA1|컬렉션 프레임워크||
 |2021.10.21 [ Day16 ]|JAVA1|Member Board Programming(1)||
 |2021.10.22 [ Day17 ]|JAVA1|Member Board Programming(2)|[평가] 프로그래밍 언어 활용|
-|2021.10.25 [ Day18 ]|JAVA1|JAVA 정리(1)|Team Console Project|
-|2021.10.26 [ Day19 ]|JAVA1|JAVA 정리(2)|Team Console Project|
-|2021.10.27 [ Day20 ]|JAVA1|JAVA 정리(3)|Team Console Project 발표|
+|2021.10.25 [ Day18 ]|JAVA1|JAVA 정리(1)||
+|2021.10.26 [ Day19 ]|JAVA1|JAVA 정리(2)||
+|2021.10.27 [ Day20 ]|JAVA1|JAVA 정리(3)|Java Console Team Project 발표|
 
-#### 2. 2개월차 [ JAVAFX · Scene Builder · Datavbase · Front (HTML · CSS · JS ) ]
+#### 2. 2개월차 [ JAVAFX · Scene Builder · Database · Front (HTML · CSS · JS ) ]
 |날짜|목차|주요내용|비고|
 |----|----|----|----|
 |2021.10.28 <br>[ Day21 ]</br>|JAVA2|JAVAFX / Scene Builder <br>- 설치, 이클립스 연동, 회원가입, 로그인</br>||
@@ -41,14 +41,14 @@
 |2021.11.05 <br>[ Day27 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- 제품목록 CRUD</br>||
 |2021.11.08 <br>[ Day28 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- 제품통계(Graph)</br>||
 |2021.11.09 <br>[ Day29 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- Chatting</br>||
-|2021.11.10 <br>[ Day30 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- </br>||
-|2021.11.11 <br>[ Day31 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- </br>|[평가] SQL 활용|
-|2021.11.12 <br>[ Day32 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- </br>||
-|2021.11.15 <br>[ Day33 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- </br>||
-|2021.11.16 <br>[ Day34 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- </br>||
-|2021.11.17 <br>[ Day35 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- </br>||
-|2021.11.18 <br>[ Day36 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- </br>||
-|2021.11.19 <br>[ Day37 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- </br>||
-|2021.11.22 <br>[ Day38 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- </br>||
-|2021.11.23 <br>[ Day39 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- </br>||
-|2021.11.24 <br>[ Day40 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- </br>||
+|2021.11.10 <br>[ Day30 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- 총정리</br>||
+|2021.11.11 <br>[ Day31 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- 총정리</br>|[평가] SQL 활용|
+|2021.11.12 <br>[ Day32 ]</br>|Front|- 개발환경 설정 : JDK, Eclipse EE, Apache Tomcat<br>- HTML||
+|2021.11.15 <br>[ Day33 ]</br>|Front|HTML||
+|2021.11.16 <br>[ Day34 ]</br>|Front|CSS||
+|2021.11.17 <br>[ Day35 ]</br>|Front|CSS||
+|2021.11.18 <br>[ Day36 ]</br>|Front|Layout||
+|2021.11.19 <br>[ Day37 ]</br>|Front|Layout|[평가] 요구사항 확인|
+|2021.11.22 <br>[ Day38 ]</br>|Front|Layout|Javafx Team Project 발표|
+|2021.11.23 <br>[ Day39 ]</br>|Front|Layout||
+|2021.11.24 <br>[ Day40 ]</br>|Front|Layout||
