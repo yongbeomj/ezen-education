@@ -43,7 +43,7 @@
 |2021.11.09 <br>[ Day29 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- Chatting</br>||
 |2021.11.10 <br>[ Day30 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- 총정리</br>||
 |2021.11.11 <br>[ Day31 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- 총정리</br>|[평가] SQL 활용|
-|2021.11.12 <br>[ Day32 ]</br>|Front|- 개발환경 설정 : JDK, Eclipse EE, Apache Tomcat<br>- HTML||
+|2021.11.12 <br>[ Day32 ]</br>|Front|- 개발환경 설정 : JDK, Eclipse IDE for Enterprise, Apache Tomcat<br>- HTML||
 |2021.11.15 <br>[ Day33 ]</br>|Front|HTML||
 |2021.11.16 <br>[ Day34 ]</br>|Front|CSS||
 |2021.11.17 <br>[ Day35 ]</br>|Front|CSS||
