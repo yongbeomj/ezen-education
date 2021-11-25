@@ -43,12 +43,12 @@
 |2021.11.09 <br>[ Day29 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- Chatting</br>||
 |2021.11.10 <br>[ Day30 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- 총정리</br>||
 |2021.11.11 <br>[ Day31 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- 총정리</br>|[평가] SQL 활용|
-|2021.11.12 <br>[ Day32 ]</br>|Front|- 개발환경 설정 : JDK, Eclipse IDE for Enterprise, Apache Tomcat<br>- HTML||
-|2021.11.15 <br>[ Day33 ]</br>|Front|HTML||
-|2021.11.16 <br>[ Day34 ]</br>|Front|CSS||
-|2021.11.17 <br>[ Day35 ]</br>|Front|CSS||
-|2021.11.18 <br>[ Day36 ]</br>|Front|Layout||
-|2021.11.19 <br>[ Day37 ]</br>|Front|Layout|[평가] 요구사항 확인|
-|2021.11.22 <br>[ Day38 ]</br>|Front|Layout|Javafx Team Project 발표|
-|2021.11.23 <br>[ Day39 ]</br>|Front|Layout||
-|2021.11.24 <br>[ Day40 ]</br>|Front|Layout||
+|2021.11.12 <br>[ Day32 ]</br>|JAVA2 / Front|- 개발환경 설정 : JDK, Eclipse IDE for Enterprise, Apache Tomcat<br>- HTML||
+|2021.11.15 <br>[ Day33 ]</br>|JAVA2 / Front|HTML||
+|2021.11.16 <br>[ Day34 ]</br>|JAVA2 / Front|CSS||
+|2021.11.17 <br>[ Day35 ]</br>|JAVA2 / Front|CSS||
+|2021.11.18 <br>[ Day36 ]</br>|JAVA2 / Front|Layout||
+|2021.11.19 <br>[ Day37 ]</br>|JAVA2 / Front|Layout|[평가] 요구사항 확인|
+|2021.11.22 <br>[ Day38 ]</br>|JAVA2 / Front||Javafx Team Project 발표|
+|2021.11.23 <br>[ Day39 ]</br>|JAVA2 / Front|Layout||
+|2021.11.24 <br>[ Day40 ]</br>|JAVA2 / Front|Layout||
