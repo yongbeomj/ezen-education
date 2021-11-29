@@ -43,18 +43,36 @@
 |2021.11.09 <br>[ Day29 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- Chatting</br>||
 |2021.11.10 <br>[ Day30 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- 총정리</br>||
 |2021.11.11 <br>[ Day31 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- 총정리</br>|[평가] SQL 활용|
-|2021.11.12 <br>[ Day32 ]</br>|JAVA2 / Front|- 개발환경 설정 : JDK, Eclipse IDE for Enterprise, Apache Tomcat<br>- HTML||
-|2021.11.15 <br>[ Day33 ]</br>|JAVA2 / Front|HTML||
-|2021.11.16 <br>[ Day34 ]</br>|JAVA2 / Front|CSS||
-|2021.11.17 <br>[ Day35 ]</br>|JAVA2 / Front|CSS||
-|2021.11.18 <br>[ Day36 ]</br>|JAVA2 / Front|Layout||
-|2021.11.19 <br>[ Day37 ]</br>|JAVA2 / Front|Layout|[평가] 요구사항 확인|
-|2021.11.22 <br>[ Day38 ]</br>|JAVA2 / Front|-|Javafx Team Project 발표|
-|2021.11.23 <br>[ Day39 ]</br>|JAVA2 / Front|Layout||
-|2021.11.24 <br>[ Day40 ]</br>|JAVA2 / Front|Layout||
+|2021.11.12 <br>[ Day32 ]</br>|Front|- 개발환경 설정 : JDK, Eclipse IDE for Enterprise, Apache Tomcat<br>- HTML||
+|2021.11.15 <br>[ Day33 ]</br>|Front|HTML||
+|2021.11.16 <br>[ Day34 ]</br>|Front|CSS||
+|2021.11.17 <br>[ Day35 ]</br>|Front|CSS||
+|2021.11.18 <br>[ Day36 ]</br>|Front|Layout||
+|2021.11.19 <br>[ Day37 ]</br>|Front|Layout|[평가] 요구사항 확인|
+|2021.11.22 <br>[ Day38 ]</br>|Front|-|Javafx Team Project 발표|
+|2021.11.23 <br>[ Day39 ]</br>|Front|Layout||
+|2021.11.24 <br>[ Day40 ]</br>|Front|Layout||
 
 #### 2. 3개월차 [ JSP · Database · Front ]
 |날짜|목차|주요내용|비고|
 |----|----|----|----|
-|2021.11.25 <br>[ Day41 ]</br>|JAVA2 / Front|Bootstrap||
-|2021.11.26 <br>[ Day42 ]</br>|JAVA2 / Front|Bootstrap||
+|2021.11.25 <br>[ Day41 ]</br>|Front|Bootstrap||
+|2021.11.26 <br>[ Day42 ]</br>|Front|Bootstrap||
+|2021.11.29 <br>[ Day43 ]</br>|JSP|JSP 기초(1)||
+|2021.11.30 <br>[ Day44 ]</br>|JSP|JSP 기초(2)|[평가] 화면설계|
+|2021.12.01 <br>[ Day45 ]</br>|JSP|||
+|2021.12.02 <br>[ Day46 ]</br>|JSP|||
+|2021.12.03 <br>[ Day47 ]</br>|JSP|||
+|2021.12.06 <br>[ Day48 ]</br>|JSP|||
+|2021.12.07 <br>[ Day49 ]</br>|JSP|||
+|2021.12.08 <br>[ Day50 ]</br>|JSP|||
+|2021.12.09 <br>[ Day51 ]</br>|JSP|||
+|2021.12.10 <br>[ Day52 ]</br>|JSP||[평가] 화면구현|
+|2021.12.13 <br>[ Day53 ]</br>|JSP|||
+|2021.12.14 <br>[ Day54 ]</br>|JSP|||
+|2021.12.15 <br>[ Day55 ]</br>|JSP|||
+|2021.12.16 <br>[ Day56 ]</br>|JSP|||
+|2021.12.17 <br>[ Day57 ]</br>|JSP||[평가] UI 테스트|
+|2021.12.20 <br>[ Day58 ]</br>|JSP|||
+|2021.12.21 <br>[ Day59 ]</br>|JSP|||
+|2021.12.22 <br>[ Day60 ]</br>|JSP|||
