@@ -32,7 +32,7 @@
 #### 2. 2개월차 [ JAVAFX · Scene Builder · Database · Front ]
 |날짜|목차|주요내용|비고|
 |----|----|----|----|
-|2021.10.28 [ Day21 ]</br>|JAVA2|JAVAFX / Scene Builder <br>- 설치, 이클립스 연동, 회원가입, 로그인</br>||
+|2021.10.28 <br>[ Day21 ]</br>|JAVA2|JAVAFX / Scene Builder <br>- 설치, 이클립스 연동, 회원가입, 로그인</br>||
 |2021.10.29 <br>[ Day22 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- 회원가입, 로그인, 아이디찾기, 비밀번호찾기</br>||
 |2021.11.01 <br>[ Day23 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- Main page, My page, 로그아웃, 회원탈퇴</br>||
 |2021.11.02 <br>[ Day24 ]</br>|JAVA2 / Database|JAVAFX / Scene Builder / MySQL <br>- 회원정보 CRUD</br>|[평가] 응용SW 기초기술 활용|
