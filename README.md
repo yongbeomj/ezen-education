@@ -29,7 +29,7 @@
 |2021.10.26 [ Day19 ]|JAVA1|JAVA 정리(2)||
 |2021.10.27 [ Day20 ]|JAVA1|JAVA 정리(3)|Java Console Team Project 발표|
 
-#### 2. 2개월차 [ JAVAFX · Scene Builder · Database · Front (HTML · CSS · JS ) ]
+#### 2. 2개월차 [ JAVAFX · Scene Builder · Database · Front ]
 |날짜|목차|주요내용|비고|
 |----|----|----|----|
 |2021.10.28 <br>[ Day21 ]</br>|JAVA2|JAVAFX / Scene Builder <br>- 설치, 이클립스 연동, 회원가입, 로그인</br>||
@@ -49,6 +49,12 @@
 |2021.11.17 <br>[ Day35 ]</br>|JAVA2 / Front|CSS||
 |2021.11.18 <br>[ Day36 ]</br>|JAVA2 / Front|Layout||
 |2021.11.19 <br>[ Day37 ]</br>|JAVA2 / Front|Layout|[평가] 요구사항 확인|
-|2021.11.22 <br>[ Day38 ]</br>|JAVA2 / Front||Javafx Team Project 발표|
+|2021.11.22 <br>[ Day38 ]</br>|JAVA2 / Front|-|Javafx Team Project 발표|
 |2021.11.23 <br>[ Day39 ]</br>|JAVA2 / Front|Layout||
 |2021.11.24 <br>[ Day40 ]</br>|JAVA2 / Front|Layout||
+
+#### 2. 3개월차 [ JSP · Database · Front ]
+|날짜|목차|주요내용|비고|
+|----|----|----|----|
+|2021.11.25 <br>[ Day41 ]</br>|JAVA2 / Front|Bootstrap||
+|2021.11.26 <br>[ Day42 ]</br>|JAVA2 / Front|Bootstrap||
