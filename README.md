@@ -49,7 +49,7 @@
 |2021.11.17 <br>[ Day35 ]</br>|Front|CSS||
 |2021.11.18 <br>[ Day36 ]</br>|Front|Layout||
 |2021.11.19 <br>[ Day37 ]</br>|Front|Layout|[평가] 요구사항 확인|
-|2021.11.22 <br>[ Day38 ]</br>|Front|-|Javafx Team Project 발표|
+|2021.11.22 <br>[ Day38 ]</br>|Front|Javafx Team Project 발표||
 |2021.11.23 <br>[ Day39 ]</br>|Front|Layout||
 |2021.11.24 <br>[ Day40 ]</br>|Front|Layout||
 
