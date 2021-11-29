@@ -7,7 +7,9 @@
 <title>Insert title here</title>
 
 <style type="text/css">
-	#carouselcontents{margin-bottom : 50px;}
+#carouselcontents {
+	margin-bottom: 50px;
+}
 </style>
 </head>
 <body>
@@ -22,7 +24,7 @@
 		</ol>
 
 		<div class="carousel-item active">
-			<img src="img/mainimage1.jpg" alt="" class="img-responsive center-block">
+			<img src="img/mainimage1.jpg" alt="">
 		</div>
 		<div class="carousel-item">
 			<img src="img/mainimage2.jpg" alt="">

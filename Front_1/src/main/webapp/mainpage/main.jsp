@@ -10,9 +10,10 @@
 	box-sizing: border-box;
 	list-style-type: none;
 }
-
 row {
-	padding-left: 2px 2px 2px 2px ;
+	padding: 2px 2px 2px 2px ;
+	margin-left : 10px;
+	text-align:center;
 }
 
 #main li {
@@ -20,6 +21,7 @@ row {
 	font-weight: bold;
 	text-align: center;
 }
+
 </style>
 
 </head>
