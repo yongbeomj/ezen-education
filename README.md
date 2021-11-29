@@ -27,7 +27,7 @@
 |2021.10.22 [ Day17 ]|JAVA1|Member Board Programming(2)|[평가] 프로그래밍 언어 활용|
 |2021.10.25 [ Day18 ]|JAVA1|JAVA 정리(1)||
 |2021.10.26 [ Day19 ]|JAVA1|JAVA 정리(2)||
-|2021.10.27 [ Day20 ]|JAVA1|JAVA 정리(3)|Java Console Team Project 발표|
+|2021.10.27 [ Day20 ]|JAVA1|JAVA 정리(3) / Java Console Team Project 발표||
 
 #### 2. 2개월차 [ JAVAFX · Scene Builder · Database · Front ]
 |날짜|목차|주요내용|비고|
@@ -53,7 +53,7 @@
 |2021.11.23 <br>[ Day39 ]</br>|Front|Layout||
 |2021.11.24 <br>[ Day40 ]</br>|Front|Layout||
 
-#### 2. 3개월차 [ JSP · Database · Front ]
+#### 3. 3개월차 [ JSP · Database · Front ]
 |날짜|목차|주요내용|비고|
 |----|----|----|----|
 |2021.11.25 <br>[ Day41 ]</br>|Front|Bootstrap||
@@ -76,3 +76,27 @@
 |2021.12.20 <br>[ Day58 ]</br>|JSP|||
 |2021.12.21 <br>[ Day59 ]</br>|JSP|||
 |2021.12.22 <br>[ Day60 ]</br>|JSP|||
+
+#### 4. 4개월차 [ Spring · JPA ]
+|날짜|목차|주요내용|비고|
+|----|----|----|----|
+|2021.12.23 <br>[ Day61 ]</br>|Spring|||
+|2021.12.24 <br>[ Day62 ]</br>|Spring|||
+|2021.12.27 <br>[ Day63 ]</br>|Spring|||
+|2021.12.28 <br>[ Day64 ]</br>|Spring|||
+|2021.12.29 <br>[ Day65 ]</br>|Spring|||
+|2021.12.30 <br>[ Day66 ]</br>|Spring|||
+|2021.12.31 <br>[ Day67 ]</br>|Spring|||
+|2021.12.22 <br>[ Day68 ]</br>|Spring|||
+|2021.12.22 <br>[ Day69 ]</br>|Spring|||
+|2021.12.22 <br>[ Day70 ]</br>|Spring|||
+|2021.12.22 <br>[ Day71 ]</br>|Spring|||
+|2021.12.22 <br>[ Day72 ]</br>|Spring|||
+|2021.12.22 <br>[ Day73 ]</br>|Spring|||
+|2021.12.22 <br>[ Day74 ]</br>|Spring|||
+|2021.12.22 <br>[ Day75 ]</br>|Spring|||
+|2021.12.22 <br>[ Day76 ]</br>|Spring|||
+|2021.12.22 <br>[ Day77 ]</br>|Spring|||
+|2021.12.22 <br>[ Day78 ]</br>|Spring|||
+|2021.12.22 <br>[ Day79 ]</br>|Spring|||
+|2021.12.22 <br>[ Day80 ]</br>|Spring|||
