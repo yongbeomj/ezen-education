@@ -21,12 +21,13 @@
 				logincheck = true;
 					// 세션 생성
 					session.setAttribute("loginid", member.getId() );
-					
+					// 세션 유지시간
+					//session.setMaxInactiveInterval(10);
 				response.sendRedirect("main.jsp");
 			}
 		}
 		// 로그인 실패
-		if( !logincheck ){ response.sendRedirect("login.jsp"); }
+		if( !logincheck ){ response.sendRedirect("login.jsp?result=fail"); }
 		
 	%>
 
