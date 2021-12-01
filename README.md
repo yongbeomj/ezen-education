@@ -86,7 +86,7 @@
 |2021.12.28 [ Day64 ]|Spring|||
 |2021.12.29 [ Day65 ]|Spring|||
 |2021.12.30 [ Day66 ]|Spring|||
-|2021.12.31 [ Day67 ]|Spring|||
+|2021.12.31 [ Day67 ]|Spring|JSP Team Project 발표||
 |2022.01.04 [ Day68 ]|Spring|||
 |2022.01.05 [ Day69 ]|Spring|||
 |2022.01.06 [ Day70 ]|Spring|||
