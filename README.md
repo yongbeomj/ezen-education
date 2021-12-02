@@ -33,7 +33,7 @@
 |날짜|목차|주요내용|비고|
 |----|----|----|----|
 |2021.10.28 [ Day21 ]</br>|JAVA2|JAVAFX / Scene Builder <br>- 설치, 이클립스 연동, 회원가입, 로그인</br>||
-|2021.10.29 [ Day22 ]</br>|JAVA2 /<br>Database|JAVAFX / Scene Builder / MySQL <br>- 회원가입, 로그인, 아이디 및 비밀번호찾기</br>||
+|2021.10.29 [ Day22 ]</br>|JAVA2 /<br>Database|JAVAFX / Scene Builder / MySQL <br>- 회원가입, 로그인, 아이디/비밀번호찾기</br>||
 |2021.11.01 [ Day23 ]</br>|JAVA2 /<br>Database|JAVAFX / Scene Builder / MySQL <br>- Main page, My page, 로그아웃, 회원탈퇴</br>||
 |2021.11.02 [ Day24 ]</br>|JAVA2 /<br>Database|JAVAFX / Scene Builder / MySQL <br>- 회원정보 CRUD</br>|[평가] 응용SW 기초기술 활용|
 |2021.11.03 [ Day25 ]</br>|JAVA2 /<br>Database|JAVAFX / Scene Builder / MySQL <br>- 게시판 CRUD(1)</br>||
