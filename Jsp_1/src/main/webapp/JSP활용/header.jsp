@@ -1,4 +1,3 @@
-<%@page import="Test.Book"%>
 <%@page import="Test.Board"%>
 <%@page import="java.io.FileInputStream"%>
 <%@page import="Test.Member"%>
@@ -37,7 +36,7 @@
 		
 		// 게시물파일
 		ArrayList<Board> boards = new ArrayList<>();
-		fileInputStream = new FileInputStream("C:/Users/505/git/ezen-education/Jsp_1/src/main/java/Test/boardlist.txt" );
+		fileInputStream = new FileInputStream("C:/Users/505/git/ezen-education/Jsp_1/src/main/java/Test/boardlist.txt"  );
 		bytes = new byte[1000];
 		fileInputStream.read( bytes );
 		String sboard = new String(bytes);
@@ -49,16 +48,6 @@
 			boards.add(board);
 		}
 		fileInputStream.close();
-		
-		ArrayList<String> books = new ArrayList<>();
-		String[] booklist = { "된다! 네이버 블로그&포스트", "스프링 부트 실전 활용 마스터", "Tucker의 Go 언어 프로그래밍", "혼자 공부하는 C 언어" };
-		Board board = new Board();
-		for (int i = 0 ; i < booklist.length; i++) {
-		    
-		    
-		}
-		
-		
 	%>
 
 	<h3> <a href="main.jsp"> 페이지 구역 </a> </h3>
@@ -70,11 +59,21 @@
 		<li> <a href="login.jsp">로그인</a> </li>
 		<li> <a href="signup.jsp">회원가입</a> </li>
 		<li> <a href="boardlist.jsp">게시판</a> </li>
-		<li> <a href="book.jsp">도서검색</a> </li>
+		<li> <a href="book.jsp">도서검색 </a> </li>
+		<li> <a href="lotto.jsp">로또구매 </a> </li>
+		
 	</ul>
-	
 </body>
 </html>
+
+
+
+
+
+
+
+
+
 
 
 

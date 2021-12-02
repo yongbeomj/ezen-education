@@ -23,7 +23,7 @@
 		// 파일처리 [ 예외처리 X : 서블릿에 예외처리 되어있음 ]
 			// 1. 파일출력 스트림
 		FileOutputStream fileOutputStream 
-		= new FileOutputStream("C:/Users/505/git/ezen-education/Jsp_1/src/main/java/Test/memberlist.txt"  , true );
+		= new FileOutputStream("C:/Users/505/git/ezen-education/Jsp_1/src/main/java/Test/memberlist.txt"   , true );
 			// 2. 출력할 문자열 
 		String outstring = member.getId()+","+member.getPassword()+","+member.getName()+"\n";
 			// 3. 문자열 출력 [ 문자열 -> 바이트  ]

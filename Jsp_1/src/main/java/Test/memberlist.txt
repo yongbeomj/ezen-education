@@ -5,3 +5,5 @@ qwer,qwer,qwer
 132,123,null
 ㅁㄴㅇ,ㅁㄴㅇ,null
 asdf,asdf,asdf
+,,
+null,null,null
