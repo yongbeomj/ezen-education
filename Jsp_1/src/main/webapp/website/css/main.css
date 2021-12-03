@@ -1,18 +1,23 @@
 @charset "UTF-8";
 
-
-/* 외부 폰트 */
-@font-face {
-    font-family: 'ImcreSoojin';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
 *{
-	font-family: 'ImcreSoojin';
+	font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 	
 }
 
+li { list-style:none; }
+.header_logo {
+	font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+	font-size: 2rem;
+}
 
+.header_menu {
+	margin-left: 20px;
+	color: #999;
+}
+
+.carousel-item img {
+	width: 100%;
+}

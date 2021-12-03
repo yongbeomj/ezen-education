@@ -75,7 +75,85 @@ function sample4_execDaumPostcode() {
 			});
 		});
 	});
+	// $( function(){ 실행문 });	: 함수 
+	$( function(){ 
+		// 버튼을 클릭했을때 이벤트 걸기 
+		$("#delete").click( function(){ 
+		
+			// ajax : 비동기식 통신 [ 페이지전환없이 통신 ]
+				//$.ajax({ 속성명:값 , 속성명:값 , 속성명:값  });
+			$.ajax({
+				url : "../../controller/memberdeletecontroller.jsp" ,
+				/* url : 통신 경로 */
+				data : {password:document.getElementById("deleteform").password.value} ,
+				/* data : { 변수명 : 값 } */ 
+				success : function( result  ){
+					if( result == 1 ){
+						alert('회원탈퇴 되었습니다');
+						location.href='../../controller/logoutcontroller.jsp';
+					}else{
+						document.getElementById("deleteresult").innerHTML = "회원정보가 다릅니다.";
+					}
+				
+				}
+			});
+		} ); // 버튼 클릭했을때 함수 끝
+	 }); // 전체 함수 끝 
 
+	
+	function namechange(){
+		document.getElementById("tdname").innerHTML =
+		"<input type='text' id='name' class='form-control'> <button id='namechangebtn' class = 'form-control'>확인</button>" 		
+
+		$(function(){
+			$("#namechangebtn").click( function(){
+				$.ajax({
+				url : "../../controller/update.jsp" ,
+				/* url : 통신 경로 */
+				data : {inputname:document.getElementById("name").value} ,
+				/* data : { 변수명 : 값 } */ 
+				success : function( result  ){
+					if( result == 1 ){
+						document.getElementById("tdname").innerHTML = document.getElementById("tdname").value;
+					}else{
+						alert("수정오류");
+					}
+				
+				}
+			});
+			
+			}); // 버튼 클릭했을때 함수 끝 		
+		});
+
+	}
+	
+	function passwordchange(){
+		alert("클릭");
+		document.getElementById("tdpassword").innerHTML =
+		"<input type='text' id='address' class='form-control'> <button id='passwordchangebtn' class = 'form-control'>확인</button>" 		
+	}
+	
+	function birthchange(){
+		alert("클릭");
+		document.getElementById("tdbirth").innerHTML =
+		"<input type='text' id='birth' class='form-control'> <button id='birthchangebtn' class = 'form-control'>확인</button>" 		
+	}
+	function sexchange(){
+		alert("클릭");
+		document.getElementById("tdsex").innerHTML =
+		"<input type='text' id='sex' class='form-control'> <button id='sexchangebtn' class = 'form-control'>확인</button>" 		
+	}
+	function phonechange(){
+		alert("클릭");
+		document.getElementById("tdphone").innerHTML =
+		"<input type='text' id='phone' class='form-control'> <button id='phonechangebtn' class = 'form-control'>확인</button>" 		
+	}
+	function addresschange(){
+		alert("클릭");
+		document.getElementById("tdaddress").innerHTML =
+		"<input type='text' id='address' class='form-control'> <button id='addresschangebtn' class = 'form-control'>확인</button>" 		
+	};
+	
 /* 회원가입 유효성검사 */
   
 	function signupcheck(){

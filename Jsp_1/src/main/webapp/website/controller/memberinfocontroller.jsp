@@ -13,7 +13,9 @@
 <%
 String id = MemberDao.getmemberDao().memberinfo(loginid).getM_id();
 String password = MemberDao.getmemberDao().memberinfo(loginid).getM_password();
-
 %>
+
+
+
 </body>
 </html>
