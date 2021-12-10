@@ -6,12 +6,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<body>	
-
-	<%
-		session.setAttribute("login", null); // 로그인 세션 초기화
-		response.sendRedirect("../view/main.jsp");
-	%>
+<body>
 
 </body>
 </html>

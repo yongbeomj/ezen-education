@@ -1,5 +1,10 @@
+<%@page import="java.text.DecimalFormat"%>
+<%@page import="dto.Product"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="dao.ProductDao"%>
 <%@page import="dao.MemberDao"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,8 +12,8 @@
 <title>웹사이트</title>
 </head>
 <body>
-	<%@include file="header.jsp"%>
-
+	<%@include file = "header.jsp" %>
+	
 	<!-- 캐러셀 start -->
 		<div id="carouselcontent" class="carousel slide" data-ride="carousel" data-interval="2000">
 		
@@ -36,139 +41,46 @@
 		</div>
 	<!-- 캐러셀 end -->
 	
+	<!-- 구분선 -->
+	<hr>
+	<br><br><br>
+	<div class="container text-center">
+		<h3> 신제품 </h3>
+		<p> New ARRIVAL </p>
+	</div>
+	
 	<!-- 제품 목록 -->
 	<div class="container">
-		<!-- 박스권 -->
-		<div class="row mb-2">
-			<!-- 가로 12 그리드 -->
-
-			<div class="col-md-4 col-sm-6 my-5">
-				<!-- col-md-4 : 700~900	col-sm-6 : 500~700  my: 위아래 마진-->
-				<div class="card">
-					<!-- 카드 -->
-					<img class="card-img-top" src="img/item1.gif">
-					<!-- 카드 상단 이미지 -->
+		<div class="row">
+			<%
+				ArrayList<Product> products = 
+				ProductDao.getProductDao().getproductlist(null,null);
+				for( Product product : products ){
+			%>
+			<div class="col-md-4">
+				<div class="card" >
+					<a href="product/productview.jsp?p_num=<%=product.getP_num()%>">
+						<img class="card-img-top pimg" src="../upload/<%=product.getP_img()%>">
+					</a> 
 					<div class="card-body">
-						<!-- 카드 내용 -->
-						<p class="card-text">코트니 모헤어 라운드 니트</p>
+						<h4><%=product.getP_name()%></h4>
 						<hr>
-						<p class="item p-1">
-							프리미엄 퀄리티를 느끼실 수 있는 리얼 모헤어 라운드니트입니다.<br> <br> <span
-								class="price mr-2">62,900원 </span> 59,750원 <br> <span
-								class="badge badge-pill badge-warning my-2"> 주문폭주 </span> <span
-								class="badge badge-pill badge-danger my-2"> 품절임박 </span>
+						<p class="item">
+							<%=product.getP_contents()%> <br><br>
+							<span class="price"> <%=product.getprice( )%> 원 </span> <br>
+							<span class="badge badge-pill badge-danger"> <%=product.getactive()%> </span>
 						</p>
 					</div>
 				</div>
 			</div>
-
-			<div class="col-md-4 col-sm-6 my-5">
-				<!-- col-md-4 : 700~900	col-sm-6 : 500~700  my: 위아래 마진-->
-				<div class="card">
-					<!-- 카드 -->
-					<img class="card-img-top" src="img/item1.gif">
-					<!-- 카드 상단 이미지 -->
-					<div class="card-body">
-						<!-- 카드 내용 -->
-						<p class="card-text">코트니 모헤어 라운드 니트</p>
-						<hr>
-						<p class="item p-1">
-							프리미엄 퀄리티를 느끼실 수 있는 리얼 모헤어 라운드니트입니다.<br> <br> <span
-								class="price mr-2">62,900원 </span> 59,750원 <br> <span
-								class="badge badge-pill badge-warning my-2"> 주문폭주 </span> <span
-								class="badge badge-pill badge-danger my-2"> 품절임박 </span>
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-md-4 col-sm-6 my-5">
-				<!-- col-md-4 : 700~900	col-sm-6 : 500~700  my: 위아래 마진-->
-				<div class="card">
-					<!-- 카드 -->
-					<img class="card-img-top" src="img/item1.gif">
-					<!-- 카드 상단 이미지 -->
-					<div class="card-body">
-						<!-- 카드 내용 -->
-						<p class="card-text">코트니 모헤어 라운드 니트</p>
-						<hr>
-						<p class="item p-1">
-							프리미엄 퀄리티를 느끼실 수 있는 리얼 모헤어 라운드니트입니다.<br> <br> <span
-								class="price mr-2">62,900원 </span> 59,750원 <br> <span
-								class="badge badge-pill badge-warning my-2"> 주문폭주 </span> <span
-								class="badge badge-pill badge-danger my-2"> 품절임박 </span>
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-md-4 col-sm-6 my-5">
-				<!-- col-md-4 : 700~900	col-sm-6 : 500~700  my: 위아래 마진-->
-				<div class="card">
-					<!-- 카드 -->
-					<img class="card-img-top" src="img/item1.gif">
-					<!-- 카드 상단 이미지 -->
-					<div class="card-body">
-						<!-- 카드 내용 -->
-						<p class="card-text">코트니 모헤어 라운드 니트</p>
-						<hr>
-						<p class="item p-1">
-							프리미엄 퀄리티를 느끼실 수 있는 리얼 모헤어 라운드니트입니다.<br> <br> <span
-								class="price mr-2">62,900원 </span> 59,750원 <br> <span
-								class="badge badge-pill badge-warning my-2"> 주문폭주 </span> <span
-								class="badge badge-pill badge-danger my-2"> 품절임박 </span>
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-md-4 col-sm-6 my-5">
-				<!-- col-md-4 : 700~900	col-sm-6 : 500~700  my: 위아래 마진-->
-				<div class="card">
-					<!-- 카드 -->
-					<img class="card-img-top" src="img/item1.gif">
-					<!-- 카드 상단 이미지 -->
-					<div class="card-body">
-						<!-- 카드 내용 -->
-						<p class="card-text">코트니 모헤어 라운드 니트</p>
-						<hr>
-						<p class="item p-1">
-							프리미엄 퀄리티를 느끼실 수 있는 리얼 모헤어 라운드니트입니다.<br> <br> <span
-								class="price mr-2">62,900원 </span> 59,750원 <br> <span
-								class="badge badge-pill badge-warning my-2"> 주문폭주 </span> <span
-								class="badge badge-pill badge-danger my-2"> 품절임박 </span>
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-md-4 col-sm-6 my-5">
-				<!-- col-md-4 : 700~900	col-sm-6 : 500~700  my: 위아래 마진-->
-				<div class="card">
-					<!-- 카드 -->
-					<img class="card-img-top" src="img/item1.gif">
-					<!-- 카드 상단 이미지 -->
-					<div class="card-body">
-						<!-- 카드 내용 -->
-						<p class="card-text">코트니 모헤어 라운드 니트</p>
-						<hr>
-						<p class="item p-1">
-							프리미엄 퀄리티를 느끼실 수 있는 리얼 모헤어 라운드니트입니다.<br> <br> <span
-								class="price mr-2">62,900원 </span> 59,750원 <br> <span
-								class="badge badge-pill badge-warning my-2"> 주문폭주 </span> <span
-								class="badge badge-pill badge-danger my-2"> 품절임박 </span>
-						</p>
-					</div>
-				</div>
-			</div>
-
-
+			<% } %>
 		</div>
-	</dIV>
+	</div>
+	
+	
 	<!-- 제품 목록 end -->
-
-	<%@include file="footer.jsp"%>
-
+	<%@include file = "footer.jsp" %>
+	
 </body>
 </html>
 

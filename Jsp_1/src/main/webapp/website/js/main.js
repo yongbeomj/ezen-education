@@ -55,31 +55,12 @@ function sample4_execDaumPostcode() {
 }
 /* 다음주소 api end */
 
-	$( function(){
-		// $("id명").이벤트명( 함수명(){ 실행코드; } );
-		$("#id").change( function() { 
-			// 비동기식 : $.ajax({ 속성명 : "값" , 속성명 : "값" , 속석명 : "값" });
-			$.ajax({ 
-				url : "idcheck.jsp" ,	
-				/* url : 통신할 경로 페이지 */ 
-				data :{userid:document.getElementById("signupform").id.value} , 	
-				/* 이동할 데이터 */
-				success : function( result ){ 
-				/* 통신이 성공했을때*/
-					if( result == 1 ){ 	// js 변수는 자료형 없다
-						document.getElementById("idresult").innerHTML = "사용중인 아이디";
-					}else{
-						
-					}
-				}
-			});
-		});
-	});
-	// $( function(){ 실행문 });	: 함수 
+/* 회원탈퇴 [ ajax : jquery  ] */ 
+
+	// $( function(){ 실행문 });	: js함수 정의하기
 	$( function(){ 
 		// 버튼을 클릭했을때 이벤트 걸기 
 		$("#delete").click( function(){ 
-		
 			// ajax : 비동기식 통신 [ 페이지전환없이 통신 ]
 				//$.ajax({ 속성명:값 , 속성명:값 , 속성명:값  });
 			$.ajax({
@@ -101,61 +82,63 @@ function sample4_execDaumPostcode() {
 	 }); // 전체 함수 끝 
 
 	
-	function namechange(){
-		document.getElementById("tdname").innerHTML =
-		"<input type='text' id='name' class='form-control'> <button id='namechangebtn' class = 'form-control'>확인</button>" 		
 
-		$(function(){
-			$("#namechangebtn").click( function(){
-				$.ajax({
-				url : "../../controller/update.jsp" ,
-				/* url : 통신 경로 */
-				data : {inputname:document.getElementById("name").value} ,
-				/* data : { 변수명 : 값 } */ 
-				success : function( result  ){
-					if( result == 1 ){
-						document.getElementById("tdname").innerHTML = document.getElementById("tdname").value;
+/* 회원탈퇴 */
+
+/* 아이디 중복체크 [ ajax ] */
+	$( function(){
+		// $("id명").이벤트명( 함수명(){ 실행코드; } );
+		$("#id").change( function() { 
+			// 비동기식 : $.ajax({ 속성명 : "값" , 속성명 : "값" , 속석명 : "값" });
+			$.ajax({ 
+				url : "idcheck.jsp" ,	
+				/* url : 통신할 경로 페이지 */ 
+				data :{userid:document.getElementById("signupform").id.value} , 	
+				/* 이동할 데이터 */
+				success : function( result ){ 
+				/* 통신이 성공했을때*/
+					if( result == 1 ){ 	// js 변수는 자료형 없다
+						document.getElementById("idresult").innerHTML = "사용중인 아이디";
 					}else{
-						alert("수정오류");
+						
 					}
-				
 				}
 			});
-			
-			}); // 버튼 클릭했을때 함수 끝 		
 		});
+	});
+/* 아이디 중복체크 end */
 
+
+
+	function namechange(){ 
+		
+		// 1. 클릭했을때 html 수정
+		document.getElementById("tdname").innerHTML = "<input type='text' id='name' class='form-control'> <button id='namechangebtn' class='form-control'>확인</button>";
+	
+		$( function(){
+			// $("id명").이벤트명( 함수명(){ 실행코드; } );
+			$("#namechangebtn").click( function() { 
+				$.ajax({ 
+					url : "../../controller/memberupdate.jsp" ,	
+					/* url : 통신할 경로 페이지 */ 
+					data :{ newname:document.getElementById("name").value} , 	
+					/* 이동할 데이터 */
+					success : function( result ){ 
+					/* 통신이 성공했을때*/
+						if( result == 1 ){ 	// js 변수는 자료형 없다
+							document.getElementById("tdname").innerHTML =  document.getElementById("name").value;
+						}else{
+							alert("[ 수정 오류 : 관리자에게문의]");
+						}
+					}
+				});
+			});
+		});
 	}
 	
-	function passwordchange(){
-		alert("클릭");
-		document.getElementById("tdpassword").innerHTML =
-		"<input type='text' id='address' class='form-control'> <button id='passwordchangebtn' class = 'form-control'>확인</button>" 		
-	}
-	
-	function birthchange(){
-		alert("클릭");
-		document.getElementById("tdbirth").innerHTML =
-		"<input type='text' id='birth' class='form-control'> <button id='birthchangebtn' class = 'form-control'>확인</button>" 		
-	}
-	function sexchange(){
-		alert("클릭");
-		document.getElementById("tdsex").innerHTML =
-		"<input type='text' id='sex' class='form-control'> <button id='sexchangebtn' class = 'form-control'>확인</button>" 		
-	}
-	function phonechange(){
-		alert("클릭");
-		document.getElementById("tdphone").innerHTML =
-		"<input type='text' id='phone' class='form-control'> <button id='phonechangebtn' class = 'form-control'>확인</button>" 		
-	}
-	function addresschange(){
-		alert("클릭");
-		document.getElementById("tdaddress").innerHTML =
-		"<input type='text' id='address' class='form-control'> <button id='addresschangebtn' class = 'form-control'>확인</button>" 		
-	};
-	
+
+
 /* 회원가입 유효성검사 */
-  
 	function signupcheck(){
 	
 		// 1. 폼 가져오기 [ 폼에 id 존재 ]	//	document.getElementById("signupform")
@@ -189,12 +172,11 @@ function sample4_execDaumPostcode() {
 		
 		if( !pwj.test(password) || !pwj.test(passwordconfirm) ){
 			document.getElementById("pwresult").innerHTML="대소문자 조합 5~15 사이만 가능합니다."; return false;
-		}else if( !password == passwordconfirm){
+		}else if( password != passwordconfirm){
 			document.getElementById("pwresult").innerHTML="패스워드가 동일하지 않습니다.";	return false;
 		}else{
 			document.getElementById("pwresult").innerHTML="사용가능한 패스워드 입니다.";
 		}
-		
 		// 이름
 		if( !namej.test(name) ){
 			document.getElementById("nameresult").innerHTML="이름을 입력해주세요.[특수문자는 제외]"; return false;
@@ -217,17 +199,61 @@ function sample4_execDaumPostcode() {
 		if( !phonej.test( phone ) ){
 			document.getElementById("phoneresult").innerHTML="전화번호 형식으로 입력해주세요."; return false;
 		}else{
-			document.getElementById("phoneresult").innerHTML="가능합니다";
+			document.getElementById("phoneresult").innerHTML="";
 		}
 	}
 
 /* 회원가입 유효성검사 end */
 
+/* 제품 상태변경 */
 
+	
+function activeupdate( p_num ){
+	
+	if ( confirm("상태변경하시겠습니까?") == true ){
+		$( function(){
+			$.ajax({ 
+				url : "../../controller/productactivecontroller.jsp" ,
+				data : { p_num : p_num  } ,
+				success : function( result ){
+					if( result == 1 ){ 
+						location.reload();
+					}else{
+						alert("변경 실패 [ 관리자에게 문의] ");
+					}
+				}
+			});
+		});
+	}
+}
 
+/* 제품 상태변경 end */
 
-
-
+function pnamechange(){ 
+		
+		// 1. 클릭했을때 html 수정
+		document.getElementById("tdname").innerHTML = "<input type='text' id='name' class='form-control'> <button id='namechangebtn' class='form-control'>확인</button>";
+	
+		$( function(){
+			// $("id명").이벤트명( 함수명(){ 실행코드; } );
+			$("#namechangebtn").click( function() { 
+				$.ajax({ 
+					url : "../../controller/memberupdate.jsp" ,	
+					/* url : 통신할 경로 페이지 */ 
+					data :{ newname:document.getElementById("name").value} , 	
+					/* 이동할 데이터 */
+					success : function( result ){ 
+					/* 통신이 성공했을때*/
+						if( result == 1 ){ 	// js 변수는 자료형 없다
+							document.getElementById("tdname").innerHTML =  document.getElementById("name").value;
+						}else{
+							alert("[ 수정 오류 : 관리자에게문의]");
+						}
+					}
+				});
+			});
+		});
+	}
 
 
 
