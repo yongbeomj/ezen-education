@@ -208,52 +208,93 @@ function sample4_execDaumPostcode() {
 /* 제품 상태변경 */
 
 	
-function activeupdate( p_num ){
+function activeupdate( p_num ){ // function : 함수만들기 
 	
-	if ( confirm("상태변경하시겠습니까?") == true ){
+		// confirm : 확인/취소 알람 띄우기 
+	if ( confirm("상태변경하시겠습니가?") == true ){ // 확인 버튼 눌렀을때
+		// 동기식
+			// location.href('../../controller/productdeletecontroller.jsp?p_num='+p_num);
+		// 비동기식
+		// ajax 통신으로 상태를 다음 상태로 변경
+			// $( function(){ 실행문 }); : jquery
 		$( function(){
 			$.ajax({ 
-				url : "../../controller/productactivecontroller.jsp" ,
+				url : "../../controller/productactivcontroller.jsp" ,
 				data : { p_num : p_num  } ,
 				success : function( result ){
-					if( result == 1 ){ 
-						location.reload();
+					if( result == 1 ){ // js 자료형이 없다
+						// 현재 페이지 초기화 [ 현재페이지 refresh ]
+						location.reload(); // jquery 메소드
 					}else{
 						alert("변경 실패 [ 관리자에게 문의] ");
 					}
 				}
-			});
+			  });
 		});
+		
 	}
+	
 }
 
 /* 제품 상태변경 end */
 
-function pnamechange(){ 
-		
-		// 1. 클릭했을때 html 수정
-		document.getElementById("tdname").innerHTML = "<input type='text' id='name' class='form-control'> <button id='namechangebtn' class='form-control'>확인</button>";
-	
-		$( function(){
-			// $("id명").이벤트명( 함수명(){ 실행코드; } );
-			$("#namechangebtn").click( function() { 
-				$.ajax({ 
-					url : "../../controller/memberupdate.jsp" ,	
-					/* url : 통신할 경로 페이지 */ 
-					data :{ newname:document.getElementById("name").value} , 	
-					/* 이동할 데이터 */
-					success : function( result ){ 
-					/* 통신이 성공했을때*/
-						if( result == 1 ){ 	// js 변수는 자료형 없다
-							document.getElementById("tdname").innerHTML =  document.getElementById("name").value;
-						}else{
-							alert("[ 수정 오류 : 관리자에게문의]");
-						}
-					}
-				});
-			});
-		});
+
+
+/* 제품 수량 변경 */
+
+function pchange( type , stock , price ){	// function:  함수 선정 // 인수 : 버튼타입 , 재고 
+	var pcount = document.getElementById("pcount").value*1; // 현재수량 가져오기 // 문자열->숫자열 : 문자열*1
+	if( type=='m'){	// 마이너스 버튼을 눌렀을때
+		pcount -= 1;	// 현재 수량 -1
+		if( pcount<1){	// 만약에 1보다 작아지면
+			alert("수량은 1개 이상만 가능 합니다."); pcount = 1;
+		}
+	}else if( type =="p" ){	// 플러스 버튼을 눌렀을때 
+		pcount += 1;	// 현재 수량 +1
+		if( pcount > stock ){	// 만약에 1보다 커지면 
+			alert("죄송합니다. 재고가 부족합니다.");	pcount = stock;
+		}
+	}else{	// 만약에 직접 수량을 변경 입력했을때 
+		if( pcount > stock ){	// 만약에 1보다 커지면 
+			alert("죄송합니다. 재고가 부족합니다.");	pcount = stock;
+		}
+		if( pcount<1){	// 만약에 1보다 작아지면
+			alert("수량은 1개 이상만 가능 합니다."); pcount = 1;
+		}
 	}
+	// 현재 수량을 현재수량 입력상자에 대입
+	document.getElementById("pcount").value = pcount; // . value 속성 태그 [ 입력상자 input ]
+	var totalprice = pcount * price; // 총가격 = 제품수량 * 제품가격 
+	document.getElementById("total").innerHTML = totalprice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ','); 	// . innerHTML 속성 태그 [ div ]
+											// 총가격.toString() : 문자열 변환
+												// .replace(기존문자 , 새로운문자);
+													// 정규표현식[문자 패턴찾기] : /\B(?=(\d{3})+(?!\d))/g
+														// 1. / : 시작 
+														// 2. \b : 시작 , 끝 문자 [ 예 : 1234일경우 1 , 4 ]
+														// 3. \d{3} : 숫자 길이 [ 예 : {3} : 숫자길이 123 ]
+														// 4. !\d : 뒤에 숫자가 없을경우
+														// 5. /g : 전역 검색
+}
+
+/* 제품 수량 변경 end */
+
+/* 찜하기 */
+function plike( p_num , m_num){ // 비동기식 통신 함수
+	if( m_num == 0 ){ alert("로그인후 찜하기 사용가능합니다."); return; }
+	$.ajax({
+		url : "../../controller/productlikecontroller.jsp" ,
+		data : { p_num : p_num , m_num : m_num } ,
+		success : function( result  ){
+			if( result == 1 ){
+				document.getElementById("btnplike").innerHTML="찜하기♡";
+			}else if( result == 2 ){
+				document.getElementById("btnplike").innerHTML="찜하기♥";
+			}
+		}
+	});
+}
+
+/* 찜하기 end */
 
 
 
