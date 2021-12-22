@@ -611,60 +611,58 @@ function pointcheck(mpoint){
 
 
 
-
 	$.getJSON("../../controller/productchart.jsp?type=2" , function(jsonObject){
+		
+		var productname = [];	// 제품별 이름 배열
+		var productcount = [];	// 제품별 판매량 배열  
+		
+		var keys2 =  Object.keys(jsonObject);
+		for( var i = 0 ; i < keys2.length ; i++ ){
+			productname[i] = keys2[i];	// json변수명에 있는 모든 키를 이름배열 저장 
+			productcount[i] = jsonObject[productname[i]]; // json변수명에 있는 값을 판매량 배열 저장 
+									// json변수명[ 키 ]	=> 값 
+		}
 		// 제품별 판매량 그래프 //
-			var keyval2 = [ ];
-			var valueval2 = [ ];
-			
-			var keys2 = Object.keys( jsonObject );
-			for (var i = 0; i < keys2.length; i++) {
-				keyval2[i] = keys2[i];	// i번째 키 저장 
-				valueval2[i] = jsonObject[ keyval2[i] ]; // i번째 값 저장
-			}
-			
 			var context2 = document.getElementById('productchart').getContext('2d');
 			var myChart2 = new Chart( context2, { 
 				 type: 'line', // 차트의 형태
 		         data: { // 차트에 들어갈 데이터
-			           labels: keyval2 ,	// 가로축
+			           labels: productname ,	// 가로축
 			           datasets: 
 							[
 			                    { // 계열추가 
-			                       	label: '날짜별 주문수', // 계열명 
-			                       	data: valueval2 	// 계열 데이터 
-				                }
+			                       	label: '제품별 판매량', // 계열명 
+			                       	data: productcount 	// 계열 데이터 
+				                  }
 							]
 						}
 			});
 		// 제품별 판매량 그래프 end  // 
 	});
-
-	function pselect() {
 		
-		var p_num = $("#pselect").val();
+	// 목록상자 데이터 변경되면
+	function pchange(){
+		var p_num = $("#pselect").val(); // 해당 아이디의 값 가져오기
 		$.getJSON('../../controller/productchart.jsp?type=3&p_num='+p_num , function(jsonObject){
-			// 제품별 판매량 그래프 //
-			var keyval3 = [ ];
-			var valueval3 = [ ];
-			
-			var keys3 = Object.keys( jsonObject );
-			for (var i = 0; i < keys3.length; i++) {
-				keyval3[i] = keys3[i];	// i번째 키 저장 
-				valueval3[i] = jsonObject[ keyval3[i] ]; // i번째 값 저장
+			var productdate = [];
+			var productcount2 = [];
+			var keys3 =  Object.keys(jsonObject);
+			for( var i = 0 ; i < keys3.length ; i++ ){
+				productdate[i] = keys3[i];	// json변수명에 있는 모든 키를 이름배열 저장 
+				productcount2[i] = jsonObject[productdate[i]]; // json변수명에 있는 값을 판매량 배열 저장 
 			}
-			
-			var context3 = document.getElementById('productdatachart').getContext('2d');
+			// 제품별 판매량 그래프 //
+			var context3 = document.getElementById('productdatechart').getContext('2d');
 			var myChart3 = new Chart( context3, { 
 				 type: 'line', // 차트의 형태
 		         data: { // 차트에 들어갈 데이터
-			           labels: keyval3 ,	// 가로축
+			           labels: productdate ,	// 가로축
 			           datasets: 
 							[
 			                    { // 계열추가 
-			                       	label: '날짜별 주문수', // 계열명 
-			                       	data: valueval3 	// 계열 데이터 
-				                }
+			                       	label: '제품별 판매추이', // 계열명 
+			                       	data: productcount2 	// 계열 데이터 
+				                  }
 							]
 						}
 			});
@@ -672,59 +670,26 @@ function pointcheck(mpoint){
 		});
 	}
 	
-	/* 카카오 지도 표시 */
-	/*function map(i, lat, lng) {
-		
-		var mapContainer = document.getElementById('map'+i), // 지도를 표시할 div
-		mapOption = {
-			center : new kakao.maps.LatLng(lat, lng), // 지도의 중심좌표
-			level : 3
-		// 지도의 확대 레벨
-		};
+	
+/* kakao 지도 start */
+function map(i , lat , lng ){
+	var sw = document.getElementById('map'+i).innerHTML;
+	if( sw =="" ){
+		document.getElementById('map'+i).style="height:350px;";
+		 // 지도를 표시할 div 
+		var mapContainer = document.getElementById('map'+i),
+		mapOption = { 
+		        center: new kakao.maps.LatLng(lat, lng), // 지도의 중심좌표 [ 위도 , 경도 ]
+		        level: 1 // 지도의 확대 레벨 [ 1 : 최대 확대 ~~~  ]
+		    };
 		// 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
-		var map = new kakao.maps.Map(mapContainer, mapOption);
-	}*/	
-	function map(i, lat, lng) {
-		const btnElement = document.getElementById('btnmap');
-  		btnElement.innerText = '닫기';
-
-		var mapContainer = document.getElementById('map'+i), // 지도를 표시할 div
-		mapOption = {
-			center : new kakao.maps.LatLng(lat, lng), // 지도의 중심좌표
-			level : 3
-		// 지도의 확대 레벨
-		};
-		// 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
-		var map = new kakao.maps.Map(mapContainer, mapOption);
+		var map = new kakao.maps.Map(mapContainer, mapOption); 
+	}else{
+		document.getElementById('map'+i).innerHTML = "";
+		document.getElementById('map'+i).style="height:0px;";
 	}
-	/* 카카오 지도 표시 end */
-	
-	function namechange(){ 
-		
-		// 1. 클릭했을때 html 수정
-		document.getElementById("tdname").innerHTML = "<input type='text' id='name' class='form-control'> <button id='namechangebtn' class='form-control'>확인</button>";
-	
-		$( function(){
-			// $("id명").이벤트명( 함수명(){ 실행코드; } );
-			$("#namechangebtn").click( function() { 
-				$.ajax({ 
-					url : "../../controller/memberupdate.jsp" ,	
-					/* url : 통신할 경로 페이지 */ 
-					data :{ newname:document.getElementById("name").value} , 	
-					/* 이동할 데이터 */
-					success : function( result ){ 
-					/* 통신이 성공했을때*/
-						if( result == 1 ){ 	// js 변수는 자료형 없다
-							document.getElementById("tdname").innerHTML =  document.getElementById("name").value;
-						}else{
-							alert("[ 수정 오류 : 관리자에게문의]");
-						}
-					}
-				});
-			});
-		});
-	}
-	
+}
+/* kakao 지도 end */
 	
 	
 	

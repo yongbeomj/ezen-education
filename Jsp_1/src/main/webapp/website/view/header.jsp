@@ -97,6 +97,7 @@
 							<li class="nav-item"> <a href="#" class="nav-link">생활가전</a> </li>
 							<li class="nav-item"> <a href="#" class="nav-link">PC/주변기기</a> </li>					
 							<li class="nav-item"> <a href="#" class="nav-link">스마트홈</a> </li>					
+							<li class="nav-item"> <a href="/Jsp_1/website/view/member/chatting.jsp" class="nav-link">실시간채팅</a> </li>					
 							<li class="nav-item"> <a href="/Jsp_1/website/view/board/boardlist.jsp" class="nav-link">고객센터</a> </li>					
 							<li class="nav-item"> <a href="/Jsp_1/website/view/product/productcart.jsp" class="nav-link">장바구니</a> </li>					
 						</ul>
