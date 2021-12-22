@@ -9,7 +9,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>웹사이트</title>
+<title>SAMSUNG</title>
 </head>
 <body>
 	<%@include file = "header.jsp" %>

@@ -1,3 +1,4 @@
+<%@page import="dao.ProductDao"%>
 <%@ page import="dto.Login"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -5,9 +6,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<title>SAMSUNG</title>
 
 	<!-- 부트스트랩css 설정 -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
 	<!-- 본인 css 호출 -->
 	<link rel="stylesheet" href="/Jsp_1/website/css/main.css">
 	
@@ -17,13 +20,26 @@
 	<!-- jquery -->
 	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 	
-	<!-- 부스트랩 js 설정 -->
+	<!-- 부트스트랩 js 설정 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	
 	<!-- 본인 js 호출 -->
 	<script src="/Jsp_1/website/js/main.js"></script>
-	<!-- 다음 주소 api js 호출 -->
+	
+	<!-- 카카오 우편 주소 api js 호출 -->
 	<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+	
+	<!-- 차트 api -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+	
+	<!-- 카카오 지도 api js 호출 -->
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5c8d5822be5fb68d9b29181ac5c35acc"></script>
+	
+	<% 
+		// 재고가 0일경우 제품의 상태를 품절로 변경
+		ProductDao.getProductDao().stockupdate(); 
+	%>
 	
 	<%
 		Login login = (Login)session.getAttribute("login");
@@ -82,6 +98,7 @@
 							<li class="nav-item"> <a href="#" class="nav-link">PC/주변기기</a> </li>					
 							<li class="nav-item"> <a href="#" class="nav-link">스마트홈</a> </li>					
 							<li class="nav-item"> <a href="/Jsp_1/website/view/board/boardlist.jsp" class="nav-link">고객센터</a> </li>					
+							<li class="nav-item"> <a href="/Jsp_1/website/view/product/productcart.jsp" class="nav-link">장바구니</a> </li>					
 						</ul>
 					</div>
 				</nav>

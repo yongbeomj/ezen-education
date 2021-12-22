@@ -26,11 +26,10 @@
 				<option value="p_name">제품명</option>
 				<option value="p_category">카테고리</option>
 				<option value="p_active">제품상태</option>
-			</select>
-			<input type="text" class="form-control" name="keyword">
-			<input type="submit" class="btn btn-outline-info" value="검색">
+			</select> <input type="text" class="form-control" name="keyword"> <input type="submit" class="btn btn-outline-info" value="검색">
 		</form>
 		<a href="productwrite.jsp"><button>제품등록</button></a>
+		<a href="productchart.jsp"><button>제품통계</button></a>
 		<h3>제품 목록</h3>
 		<table class="table">
 			<tr>
@@ -58,7 +57,7 @@
 				<td><%=product.getP_size()%></td>
 				<td><%=product.getP_stock()%></td>
 				<td><%=product.getP_date()%></td>
-				<td><a href="productupdate.jsp?p_num=<%=product.getP_num()%>">
+				<td><a href="#">
 						<button class="btn-outline-info">수정</button>
 				</a> <a href="../../controller/productdeletecontroller.jsp?p_num=<%=product.getP_num()%>">
 						<button class="btn-outline-info">삭제</button>
