@@ -6,7 +6,7 @@
     pageEncoding="UTF-8"%>
 <%
 
-	String folderpath = "C:/Users/505-t/git/web_ezen_1/jsp/src/main/webapp/website/upload";
+	String folderpath = "C:/Users/ez201209/git/ezen-education/Jsp_1/src/main/webapp/website/upload";
 	MultipartRequest multipartRequest = new MultipartRequest( 
 			request , folderpath , 1024*1024*100 ,"UTF-8",new DefaultFileRenamePolicy() );
 	

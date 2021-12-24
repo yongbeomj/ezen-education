@@ -25,7 +25,7 @@ li {
 }
 
 .item .price {
-	font-family: 'GongGothicBold';
+	font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 	font-size: 16px;
 }
 
@@ -34,16 +34,16 @@ li {
 }
 
 #total {
-	font-family: 'Spoqa Han Sans Neo';
+	font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 }
 
 .pview {
-	font-family: 'Spoqa Han Sans Neo';
+	font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 	font-size: 1rem;
 }
 
 .carttotal {
-	font-family: 'Spoqa Han Sans Neo';
+	font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 	font-size: 1.5rem;
 }
 
@@ -71,7 +71,7 @@ li {
 
 /* 보내는메시지*/
 .from{
-	font-family: 'Spoqa Han Sans Neo';
+	font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 	font-size: 1.0rem;
 	background: #ffeb33;
 	border-radius: 10px;
@@ -83,7 +83,7 @@ li {
 }
 /* 받는 메시지 */
 .to{
-	font-family: 'Spoqa Han Sans Neo';
+	font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 	font-size: 1.0rem;
 	background: white;
 	border-radius: 10px;
@@ -97,4 +97,10 @@ li {
 	border: 1px solid #eeeeee; /* 테두리 */
 	border-radius: 30px;	/* 모서리 곡선 */
 	overflow: auto;	
+}
+
+.roomstart{
+	font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+	font-size: 0.8rem;
+	background-color : #eeeeee;
 }

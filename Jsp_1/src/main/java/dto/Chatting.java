@@ -1,26 +1,32 @@
 package dto;
 
 import java.io.IOException;
+import java.util.Hashtable;
+import java.util.Map;
 import java.util.Vector;
 
+import javax.servlet.annotation.HttpConstraint;
 import javax.websocket.OnClose;
 import javax.websocket.OnMessage;
 import javax.websocket.OnOpen;
 import javax.websocket.Session;
+import javax.websocket.server.PathParam;
 import javax.websocket.server.ServerEndpoint;
 
 // @ : 어노테이션 [ 메타데이터 ] : 미리 만들어진 정보(코드,메모리) 를 제공 받음
-@ServerEndpoint("/chatting") // 1.서버소켓[종작첨] ( 경로생성 )
+@ServerEndpoint("/chatting/{rooomnum}") // 1.서버소켓[종작첨] ( 경로생성 )
 public class Chatting {
 	
+	private Integer roomnum = 0; 
+	
 	// * 접속된 세션(회원)을 저장하는 리스트 [ Arraylist vs Vector(동기화) ]
-	private static Vector<Session> clients = 
-			new Vector<Session>();
-		
+	private static Map< Session , Integer > clients =  new Hashtable< Session,Integer>();
+	
 	// 2. 클라이언트가 서버로부터 접속 요청
 	@OnOpen // 소켓 접속하는 어노테이션 
-	public void onOpen( Session session ) {
-		clients.add(session);	// 리스트에 추가 
+	public void onOpen( Session session , @PathParam("rooomnum") int rooomnum   ) {
+		this.roomnum = roomnum;
+		clients.put(session, this.roomnum);	// 리스트에 추가 
 		//System.out.print( session.getId() ); // 세션 번호 확인 
 		//System.out.print("현재 접속한 세션들 : " + clients ); // 현재 접속된 세션들 
 	}
@@ -35,11 +41,13 @@ public class Chatting {
 	@OnMessage	// 메시지를 받는 어노테이션 
 	public void onMessage( String msg , Session session ) throws IOException {
 		// 인수 : 메시지 , 보낸 세션(회원)
-		for( Session client : clients ) {
-			// 모든 리스트에 저장된[ 접속된 ] 메시지 보내기 
-			if( !client.equals(session) ) {
-				// 본인을 제외한 모든 사람에게 
-				client.getBasicRemote().sendText(msg);
+		for( Session key : clients.keySet() ) {	// 모든 키 가져오기
+			if( clients.get(key) == Integer.parseInt( msg.split(",")[0] )) { // 해당 키 에 값 == 방번호
+				// 모든 리스트에 저장된[ 접속된 ] 메시지 보내기 
+				if( !key.equals(session) ) {	// 본인을 제외한
+					// 본인을 제외한 모든 사람에게 
+					key.getBasicRemote().sendText(msg);
+				}
 			}
 		}
 	}
@@ -52,5 +60,4 @@ public class Chatting {
 	 * 
 	 * }
 	 */
-
 }
